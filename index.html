@@ -18,19 +18,71 @@
         </nav>
     </header>
 
+    <div id="spacer"></div>
     <main>
-        <h1>DESIGN</h1>
-        <img src="assets/images/main-profile.webp" alt="Profile image of Niccolò Segato">
+        <div id="main-content">
+            <h1>DESIGN</h1>
+            <video autoplay muted loop playsinline preload="auto" id="bg-video">
+                <source src="assets/images/portfolio.webm" type="video/webm">
+                <source src="assets/images/portfolio.mp4" type="video/mp4">
+                Video unavailable
+            </video>
+        </div>
     </main>
 
     <section id="about">
-        <h2>About Me</h2>
+        <h2>About</h2>
         <p>Welcome to my portfolio! I am a web developer with a passion for creating beautiful and functional websites.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of my recent projects:</p>
+        <span class="projects-row">
+            <div class="project-card">Project 1</div>
+            <div class="project-card">Project 2</div>
+        </span>
+        <span class="projects-row">
+            <div class="project-card">Project 3</div>
+            <div class="project-card">Project 4</div>
+        </span>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Welcome to my blog! Here I share my thoughts on web development, design, and more.</p>
     </section>
 
     <footer>
         <p>&copy; 2023 Niccolò Segato. All rights reserved.</p>
         <p>Follow me on</p>
     </footer>
+<script>
+  const heroWrapper = document.getElementsByTagName('main')[0];
+  const heroContent = document.getElementById('main-content');
+  const maxScroll = 300;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const progress = Math.min(scrollY / maxScroll, 1);
+
+    // Riduci il div
+    const scale = 1 - progress * 0.3; // da 1 a 0.7
+    const radius = progress * 24;     // da 0 a 24px
+
+    heroContent.style.transform = `scale(${scale})`;
+    heroContent.style.borderRadius = `${radius}px`;
+
+    // Quando finisce la trasformazione: sblocca il div
+    if (scrollY >= maxScroll) {
+      heroWrapper.style.position = 'relative';
+      heroWrapper.style.height = 'auto';
+    } else {
+      heroWrapper.style.position = 'fixed';
+      heroWrapper.style.top = '0';
+      heroWrapper.style.height = '100vh';
+    }
+  });
+</script>
 </body>
 </html>
