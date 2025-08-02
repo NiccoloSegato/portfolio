@@ -1,9 +1,17 @@
+@font-face {
+    font-family: 'GT-America';
+    src: url('../assets/fonts/GT-Standard-VF.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     background-color: #ea7332;
     margin: 0;
     padding: 0;
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: 'GT-America', Helvetica, sans-serif;
 }
 
 /* Header styles */
