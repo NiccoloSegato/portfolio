@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Niccolò Segato</title>
     <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Niccolò Segato</h1>
+        <h1>NICCOLÒ SEGATO</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul id="nav-links">
+                <li><a class="nav-link-href" href="#about">About</a></li>
+                <li><a class="nav-link-href" href="#projects">Projects</a></li>
+                <li><a class="nav-link-href" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div id="spacer"></div>
+    
     <main>
         <div id="main-content">
             <h1>DESIGN</h1>
@@ -31,21 +33,31 @@
     </main>
 
     <section id="about">
-        <h2>About</h2>
-        <p>Welcome to my portfolio! I am a web developer with a passion for creating beautiful and functional websites.</p>
+        <h2>About me</h2>
+        <p>Born in Bologna and based in Milan, I grew up with a passion for design applied to computer science. Hours and hours spent programming, drawing UIs, designing UX and studying the best communication strategies led me, together with my studies, to actively participate in the Milanese design panorama. My path began at the technical institute with a computer science major, where I learned all the notions of programming and networks and the Internet. I specialized in an engineering course that then led me to the Faculty of Design at the Politecnico di Milano, one of the world's excellences in Design, where I still study and specialize. In my free time, I like to follow F1, run and program, my great passion.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <p>Here are some of my recent projects:</p>
-        <span class="projects-row">
-            <div class="project-card">Project 1</div>
-            <div class="project-card">Project 2</div>
-        </span>
-        <span class="projects-row">
-            <div class="project-card">Project 3</div>
-            <div class="project-card">Project 4</div>
-        </span>
+        <p style="margin-bottom: 20px;">Here are my projects</p>
+        <div id="projects-filters">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="business">Business</button>
+            <button class="filter-button" data-filter="university">University</button>
+            <button class="filter-button" data-filter="others">Others</button>
+        </div>
+        <div id="projects-list">
+            <div id="pjl-left"></div>
+            <div id="pjl-right">
+                <p id="ch-left-uptitle">CASE HISTORY</p>
+                <p id="ch-left-title">Case history 1</p>
+                <div id="ch-left-indicators">
+                    <img src="assets/images/left-btn.png" class="ch-left-arrows" id="ch-sub-arrow-left" alt="Previous image" onclick="previousCarousel()">
+                    <p id="ch-left-counter">1 di 33</p>
+                    <img src="assets/images/right-btn.png" class="ch-left-arrows" id="ch-sub-arrow-right" alt="Next image" onclick="nextCarousel()">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="blog">
@@ -58,31 +70,7 @@
         <p>Follow me on</p>
     </footer>
 <script>
-  const heroWrapper = document.getElementsByTagName('main')[0];
-  const heroContent = document.getElementById('main-content');
-  const maxScroll = 300;
-
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const progress = Math.min(scrollY / maxScroll, 1);
-
-    // Riduci il div
-    const scale = 1 - progress * 0.3; // da 1 a 0.7
-    const radius = progress * 24;     // da 0 a 24px
-
-    heroContent.style.transform = `scale(${scale})`;
-    heroContent.style.borderRadius = `${radius}px`;
-
-    // Quando finisce la trasformazione: sblocca il div
-    if (scrollY >= maxScroll) {
-      heroWrapper.style.position = 'relative';
-      heroWrapper.style.height = 'auto';
-    } else {
-      heroWrapper.style.position = 'fixed';
-      heroWrapper.style.top = '0';
-      heroWrapper.style.height = '100vh';
-    }
-  });
+  
 </script>
 </body>
 </html>
