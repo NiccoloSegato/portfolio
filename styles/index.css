@@ -151,17 +151,77 @@ main h1 {
     background-color: black;
     color: white;
 }
-#projects-list {
+.projects-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-radius: 8px;
-    overflow: hidden;
-    height: 600px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
-#pjl-left {
-    width: 60%;
-    background-image: url("../assets/images/case-history/1.jpg");
+/* Hide scrollbar for Chrome, Safari and Opera */
+.projects-container::-webkit-scrollbar {
+    display: none;
+}
+.project-card {
+    min-width: 30%;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
     background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: background 0.2s;
+}
+.project-card p {
+    color: white;
+    margin: 0;
+    font-size: 30px;
+}
+.project-card a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s;
+}
+.project-card a i {
+    margin-right: 8px;
+    margin-left: 3px;
+}
+.project-card:hover a {
+    width: 145px;
+}
+#project-card-1 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/projects/polireplay.webp") center/cover;
+    background-size: auto 100%;
     background-position: center;
+    background-repeat: no-repeat;
+}
+#project-card-1:hover {
+    background-size: auto 105%;
+}
+#project-card-2 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/projects/unverse.webp") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#project-card-2:hover {
+    background-size: auto 105%;
 }
