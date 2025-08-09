@@ -123,11 +123,13 @@ main h1 {
 }
 /* Section projects styles */
 #projects {
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin: 10vh auto;
     padding: 20px 0;
+    background: linear-gradient(transparent, #e9e9e9);
 }
+/*
 #projects-filters {
     display: flex;
     justify-content: center;
@@ -150,14 +152,14 @@ main h1 {
 .filter-button.active {
     background-color: black;
     color: white;
-}
+}*/
 .projects-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin: 20px 0;
-    padding: 0;
+    padding: 0 5%;
     overflow-x: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -179,11 +181,20 @@ main h1 {
     flex-direction: column;
     justify-content: flex-end;
     transition: background 0.2s;
+    text-align: left;
 }
-.project-card p {
+.project-card h3 {
     color: white;
     margin: 0;
     font-size: 30px;
+}
+.project-card p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s ease-in, opacity 0.3s ease-in;
 }
 .project-card a {
     background-color: white;
@@ -202,10 +213,14 @@ main h1 {
 }
 .project-card a i {
     margin-right: 8px;
-    margin-left: 3px;
+    margin-left: 0px;
 }
 .project-card:hover a {
     width: 145px;
+}
+.project-card:hover p {
+    height: auto;
+    opacity: 1;
 }
 #project-card-1 {
     background: linear-gradient(transparent, #0000009d), url("../assets/images/projects/polireplay.webp") center/cover;
@@ -223,5 +238,41 @@ main h1 {
     background-repeat: no-repeat;
 }
 #project-card-2:hover {
+    background-size: auto 105%;
+}
+#project-card-3 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/projects/edusync.webp") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#project-card-3:hover {
+    background-size: auto 105%;
+}
+#project-card-4 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/projects/cospacecanarias.webp") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#project-card-4:hover {
+    background-size: auto 105%;
+}
+#project-card-5 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/projects/chrysalis.webp") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#project-card-5:hover {
+    background-size: auto 105%;
+}
+#project-card-6 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/projects/others.webp") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#project-card-6:hover {
     background-size: auto 105%;
 }
