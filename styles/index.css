@@ -119,11 +119,22 @@ main h1 {
     justify-content: space-between;
 }
 #about-left-card {
-    width: 54%;
-    background: linear-gradient(#eff2ff, #c3d4ff);
+    width: calc(55% - 60px);
+    background: radial-gradient(circle at 20% 30%, #f7d9a7 0%, transparent 40%),
+              radial-gradient(circle at 80% 40%, #ffdba6 0%, transparent 40%),
+              radial-gradient(circle at 40% 80%, #c6d6b8 0%, transparent 40%),
+              radial-gradient(circle at 70% 90%, #f2c9aa 0%, transparent 40%),
+              #f9f6f2;
     text-align: left;
     border-radius: 30px;
-    height: 500px;
+    height: calc(500px - 60px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#about-cit {
+    font-size: 3vw;
 }
 #about-right-card {
     width: 44%;
@@ -146,7 +157,6 @@ main h1 {
     font-size: 2vw;
 }
 #about-right-card-bottom {
-    border: 2px solid black;
     border-radius: 30px;
     height: 380px;
 }
