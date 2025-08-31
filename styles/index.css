@@ -455,3 +455,34 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+@media screen and (max-width: 768px) {
+    #about-main-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-left-card {
+        height: calc(300px - 60px);
+        width: calc(96% - 60px);
+    }
+    #about-cit {
+        font-size: 7vw;
+        margin: 0;
+    }
+    #about-right-card {
+        width: 96%;
+        justify-content: flex-start;
+        margin-top: 10px;
+        gap: 10px;
+        height: auto;
+    }
+    #about-right-card-top p {
+        font-size: 5vw;
+    }
+    #about-right-card-bottom {
+        height: 250px;
+    }
+    #projects {
+        width: 96%;
+    }
+}
