@@ -228,6 +228,7 @@ main h1 {
     justify-content: flex-end;
     transition: background 0.2s;
     text-align: left;
+    overflow-y: hidden;
 }
 .project-card h3 {
     color: white;
@@ -482,7 +483,15 @@ footer {
     #about-right-card-bottom {
         height: 250px;
     }
-    #projects {
+    #projects p {
         width: 96%;
+    }
+    .project-card {
+        min-width: 70%;
+        height: 300px;
+    }
+    #job > p {
+        width: 90%;
+        margin: auto;
     }
 }
