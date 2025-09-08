@@ -494,4 +494,14 @@ footer {
         width: 90%;
         margin: auto;
     }
+    .job-card {
+        min-width: 70%;
+        max-width: none;
+    }
+    .blog-post {
+        min-width: 75%;
+    }
+    .blog-post p {
+        display: none;
+    }
 }
