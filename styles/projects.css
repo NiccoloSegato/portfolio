@@ -83,7 +83,7 @@ main h1 {
 .center-proj:hover .animated-button{
     width: 145px;
 }
-.center-proj h2 {
+.project-title {
     font-size: 3vw;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -162,4 +162,31 @@ main h1 {
         linear-gradient(135deg, #fcefdc 0%, #c9ede3 30%, #f8a66c 65%, #f36c1d 100%);
     background-blend-mode: normal, screen, screen, normal;
     color: #111;
+}
+
+@media screen and (max-width: 768px) {
+    main h1 {
+        font-size: 15vw;
+    }
+    .project-box-v1, .project-box-v2 {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-proj {
+        height: 300px;
+        width: 100%;
+    }
+    .center-proj {
+        width: calc(100% - 30px);
+        height: auto;
+        margin: 5px 0;
+    }
+    .project-title {
+        font-size: 10vw;
+    }
+    .right-proj {
+        width: 100%;
+        height: 300px;
+        margin-top: 3px;
+    }
 }

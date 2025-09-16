@@ -412,7 +412,4 @@ main h1 {
     .blog-post p {
         display: none;
     }
-    #about-header, #projects-header, #contact-header {
-        display: none;
-    }
 }

@@ -92,3 +92,9 @@ footer {
     height: auto;
     opacity: 1;
 }
+
+@media screen and (max-width: 768px) {
+    #about-header, #projects-header, #contact-header {
+        display: none;
+    }
+}
