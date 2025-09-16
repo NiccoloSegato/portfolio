@@ -67,3 +67,28 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+/* ANIMATED BUTTON */
+.animated-button {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s;
+}
+.animated-button i {
+    margin-right: 8px;
+    margin-left: 0px;
+}
+.animated-button:hover p {
+    height: auto;
+    opacity: 1;
+}

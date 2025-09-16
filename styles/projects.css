@@ -1,12 +1,13 @@
 header {
     color: black !important;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 #spacer {
     height: 100px;
 }
 main {
     width: 90%;
-    margin: auto;
+    margin: auto auto 40px auto;
 }
 main h1 {
     font-size: 10vw;
@@ -14,52 +15,115 @@ main h1 {
     margin-bottom: 20px;
 }
 
-.project-box {
+#projects-container {
+    margin-top: 50px;
+}
+.project-box-v1 {
     width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
-.v1-left-proj {
+.project-box-v2 {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.left-proj {
     width: 35%;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.v1-left-proj-top {
+.left-proj-top {
     height: 49%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.v1-left-proj-top-img-first {
+.left-proj-top-img-first {
     width: 40%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-.v1-left-proj-top-img-second {
+.left-proj-top-img-second {
     width: 59%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-.v1-left-proj-bottom {
+.left-proj-bottom {
     height: 49%;
 }
-.v1-left-proj-bottom-img{
+.left-proj-bottom-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-.v1-center-proj {
-    width: 40%;
-    height: 500px;
+.center-proj {
+    width: calc(40% - 30px);
+    height: 470px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
 }
-.v1-right-proj {
+.center-proj:hover .animated-button{
+    width: 145px;
+}
+.center-proj h2 {
+    font-size: 3vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.right-proj {
     width: 24%;
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-proj img {
+    width: 100%;
+    height: 49%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* COLORS */
+#project-1-text {
+    background:
+        linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)),
+        radial-gradient(60rem 60rem at 20% 15%, rgba(255,255,255,.35), transparent 60%),
+        radial-gradient(50rem 50rem at 80% 85%, rgba(255,255,255,.30), transparent 60%),
+        linear-gradient(135deg, #00e08f 0%, #00c6d9 30%, #0076ff 65%, #0044cc 100%);
+    background-blend-mode: normal, screen, screen, normal;
+    color: #111;
+}
+#project-2-text {
+    background:
+        linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)),
+        radial-gradient(60rem 60rem at 20% 15%, rgba(255,255,255,.35), transparent 60%),
+        radial-gradient(50rem 50rem at 80% 85%, rgba(255,255,255,.30), transparent 60%),
+        linear-gradient(135deg, #8ed3f4 0%, #d9cfe3 50%, #f7b6c9 100%);
+    background-blend-mode: normal, screen, screen, normal;
+    color: #111;
+}
+#project-3-text {
+    background:
+        linear-gradient(rgba(255,255,255,.60), rgba(255,255,255,.60)),
+        radial-gradient(60rem 60rem at 20% 15%, rgba(255,255,255,.35), transparent 60%),
+        radial-gradient(50rem 50rem at 80% 85%, rgba(255,255,255,.30), transparent 60%),
+        linear-gradient(135deg, #E8DDF9 0%, #D7C8FF 22%, #CDE8FF 48%, #CFF3EA 72%, #FFE0F1 100%);
+    background-blend-mode: normal, screen, screen, normal;
+    color: #111;
 }
