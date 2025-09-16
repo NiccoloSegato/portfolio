@@ -2,8 +2,11 @@ header {
     color: black !important;
     background-color: rgba(255, 255, 255, 0.9);
 }
+#nav-links a {
+    color: black !important;
+}
 #spacer {
-    height: 100px;
+    height: 150px;
 }
 main {
     width: 90%;
@@ -85,6 +88,10 @@ main h1 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.favicon-text {
+    font-weight: bold;
+    margin: 5px 0;
+}
 .right-proj {
     width: 24%;
     height: 500px;
@@ -110,11 +117,11 @@ main h1 {
     color: #111;
 }
 #project-2-text {
-    background:
+    background:    
         linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)),
         radial-gradient(60rem 60rem at 20% 15%, rgba(255,255,255,.35), transparent 60%),
         radial-gradient(50rem 50rem at 80% 85%, rgba(255,255,255,.30), transparent 60%),
-        linear-gradient(135deg, #8ed3f4 0%, #d9cfe3 50%, #f7b6c9 100%);
+        linear-gradient(135deg, #a8d6f4 0%, #9ed2c1 35%,#f5c5cf 70%,#1d1e30 100%);
     background-blend-mode: normal, screen, screen, normal;
     color: #111;
 }
@@ -124,6 +131,15 @@ main h1 {
         radial-gradient(60rem 60rem at 20% 15%, rgba(255,255,255,.35), transparent 60%),
         radial-gradient(50rem 50rem at 80% 85%, rgba(255,255,255,.30), transparent 60%),
         linear-gradient(135deg, #E8DDF9 0%, #D7C8FF 22%, #CDE8FF 48%, #CFF3EA 72%, #FFE0F1 100%);
+    background-blend-mode: normal, screen, screen, normal;
+    color: #111;
+}
+#project-4-text {
+    background:
+        linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)),
+        radial-gradient(60rem 60rem at 20% 15%, rgba(255,255,255,.35), transparent 60%),
+        radial-gradient(50rem 50rem at 80% 85%, rgba(255,255,255,.30), transparent 60%),
+        linear-gradient(315deg, #f8e6d4 0%, #f5a25b 35%, #eb7726 70%, #8a4c26 100%);
     background-blend-mode: normal, screen, screen, normal;
     color: #111;
 }
