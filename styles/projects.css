@@ -105,6 +105,17 @@ main h1 {
     object-fit: cover;
     border-radius: 10px;
 }
+#project-links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+#project-links a:hover {
+    width: 110px;
+}
 
 /* COLORS */
 #project-1-text {
