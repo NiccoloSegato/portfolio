@@ -143,3 +143,12 @@ main h1 {
     background-blend-mode: normal, screen, screen, normal;
     color: #111;
 }
+#project-5-text {
+    background:
+        linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)),
+        radial-gradient(60rem 60rem at 20% 15%, rgba(255,255,255,.35), transparent 60%),
+        radial-gradient(50rem 50rem at 80% 85%, rgba(255,255,255,.30), transparent 60%),
+        linear-gradient(135deg, #fcefdc 0%, #c9ede3 30%, #f8a66c 65%, #f36c1d 100%);
+    background-blend-mode: normal, screen, screen, normal;
+    color: #111;
+}
