@@ -1,0 +1,45 @@
+#shop-items-container {
+  list-style: none;
+  padding: 0;
+  margin: 100px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.shop-item {
+  flex: 1 1 calc(25% - 24px);
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+.shop-item img {
+  width: auto;
+  height: auto;
+  display: block;
+  max-height: 300px;
+  object-fit: contain;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin: auto;
+}
+#shop-1-text {
+  background:
+    linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)),
+    radial-gradient(60rem 60rem at 20% 15%, rgba(255,255,255,.25), transparent 60%),
+    radial-gradient(50rem 50rem at 80% 85%, rgba(255,255,255,.20), transparent 60%),
+    linear-gradient(135deg,
+        #d82421 0%,      /* rosso brillante simile allo sfondo del poster */
+        #c81515 35%,     /* rosso saturo medio */
+        #8a0f0f 70%,     /* rosso scuro profondo */
+        #3a0000 100%     /* quasi nero, per profondità */
+    );
+    background-blend-mode: normal, screen, screen, normal;
+    color: #111;
+}
+@media (max-width: 600px) {
+  .shop-item {
+    flex: 1 1 100%;
+  }
+}
