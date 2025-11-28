@@ -38,6 +38,69 @@
     background-blend-mode: normal, screen, screen, normal;
     color: #111;
 }
+
+#shop-about {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.shop-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.9rem 1.6rem;
+  border-radius: 15px;
+
+  background: linear-gradient(180deg, #ff4b4b 0%, #ff3434 100%);
+  position: relative;
+  border: none;
+  cursor: pointer;
+
+  width: fit-content;
+
+  /* Effetto glow */
+  box-shadow:
+      0 5px 10px rgba(255, 40, 40, 0.35),
+      0 0 10px rgba(255, 60, 60, 0.45) inset;
+
+  /* Testo */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  /* Per migliorare il rendering del bordo interno */
+  overflow: hidden;
+}
+
+/* Highlight interno (bordino chiaro all'interno) */
+.shop-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.1));
+  mask: 
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+  -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+}
+
+/* Hover */
+.shop-button:hover {
+  box-shadow:
+      0 8px 18px rgba(255, 40, 40, 0.45),
+      0 0 12px rgba(255, 80, 80, 0.55) inset;
+  transform: translateY(-1px);
+}
+
 @media (max-width: 600px) {
   .shop-item {
     flex: 1 1 100%;
