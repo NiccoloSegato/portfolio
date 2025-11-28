@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bauhaus - Shop - Niccolò Segato</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <link href="../styles/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="../styles/fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="../styles/fontawesome/css/brands.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>NICCOLO' SEGATO</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a class="nav-link-href" href="../index.html" id="about-header">About</a></li>
+                <li><a class="nav-link-href" href="" id="projects-header">Projects</a></li>
+                <li><a class="nav-link-href" href="../index.html" id="contact-header">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="spacer"></div>
+    
+    <main>
+        <p><strong>SHOP</strong></p>
+        <h2>Checkout</h2>
+
+        <div id="checkout-item">
+            <img src="../shop/assets/items/don_camillo.png" alt="Bauhaus Design Poster">
+            <div id="item-details">
+                <h3>Dio ti vede e Stalin no</h3>
+                <p><i>La celebre frase.</i></p>
+                <p><i class="fa-solid fa-user"></i> Niccolò Segato</p>
+                <p style="font-size: 40px; font-weight: bold; margin: 0;">15€</p>
+        <p>Shipping included</p>
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <stripe-buy-button buy-button-id="buy_btn_1SYQzzK3UVly5wvJ9LvnqmUf" publishable-key="pk_live_51MRvKzK3UVly5wvJ5sq7RvhJYSp5aWxfHAAn9e661KgBVKIpg3aFRkhW39RNRVGg2645ar46Z5PgJpIX4eZ3jApg00ScvXDGHB"></stripe-buy-button>
+                </p>
+            </div>
+        </div>
+
+        <divider></divider>
+        <h2>ABOUT YOUR ORDER</h2>
+        <p><i class="fa-solid fa-sack-dollar"></i> SHIPPING COSTS: At this moment, we ship within Italy. Shipping costs are included in the price.</p>
+        <p><i class="fa-solid fa-clock"></i> SHIPPING TIMES: Orders are typically processed and shipped within 2-3 business days. Delivery times may vary based on your location.</p>
+        <p><i class="fa-solid fa-user-shield"></i> PAYMENT SECURITY: We use secure payment methods to protect your information. All the transactions are processed through Stripe to ensure maximum security.</p>
+        <p><i class="fa-solid fa-rotate-left"></i> RETURNS: If you are not satisfied with your purchase, please contact us within 14 days to initiate a return.</p>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Niccolo' Segato. All rights reserved.</p>
+    </footer>
+</body>
+</html>
