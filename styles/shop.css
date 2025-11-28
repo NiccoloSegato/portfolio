@@ -38,6 +38,15 @@
     background-blend-mode: normal, screen, screen, normal;
     color: #111;
 }
+#shop-2-text {
+  background:
+    linear-gradient(rgba(230, 185, 90, 0.35), rgba(230, 185, 90, 0.35)),
+    radial-gradient(60rem 60rem at 20% 15%, rgba(255, 210, 100, 0.25), transparent 60%),
+    radial-gradient(50rem 50rem at 80% 85%, rgba(180, 130, 50, 0.20), transparent 60%),
+    linear-gradient(135deg, #e8c872 0%, #d4a73f 30%, #b48d2c 65%, #7b5a1a 100%);
+  background-blend-mode: normal, screen, screen, normal;
+  color: #111;
+}
 
 #shop-about {
   border: 2px solid black;
