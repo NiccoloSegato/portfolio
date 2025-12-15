@@ -18,7 +18,7 @@ main {
 h1 {
     font-family: Bogart, sans-serif;
     color: #f0832b;
-    font-size: 60px;
+    font-size: clamp(2.2rem, 8vw, 60px);
     margin: 0;
 }
 h2 {
