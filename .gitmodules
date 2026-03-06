@@ -1,0 +1,3 @@
+[submodule "polireplay"]
+	path = polireplay
+	url = https://github.com/NiccoloSegato/polireplay.git
