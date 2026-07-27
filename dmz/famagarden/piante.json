@@ -1,0 +1,112 @@
+[
+  {
+    "id": "rio",
+    "nome": "Rio",
+    "proprietario": "Alice",
+    "specie": "Pothos",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "carmine",
+    "nome": "Carmine",
+    "proprietario": "Alice",
+    "specie": "Pothos",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "ermenetiglio",
+    "nome": "Ermenetiglio",
+    "proprietario": "Jacopo",
+    "specie": "Tiglio",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "gino",
+    "nome": "Gino",
+    "proprietario": "Jacopo",
+    "specie": "Echeveria elegans",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "enrica",
+    "nome": "Enrica",
+    "proprietario": "Niccolò",
+    "specie": "Hedera helix",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "gessika",
+    "nome": "Gessika",
+    "proprietario": "Niccolò",
+    "specie": "Rosa in miniatura",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "tolino",
+    "nome": "Tolino",
+    "proprietario": "Niccolò",
+    "specie": "Parodia maginifica",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "bruce",
+    "nome": "Bruce",
+    "proprietario": "Niccolò",
+    "specie": "Sedum Palmeri",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "elsa",
+    "nome": "Elsa",
+    "proprietario": "Niccolò",
+    "specie": "Hedera helix",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "edda",
+    "nome": "Edda",
+    "proprietario": "Niccolò",
+    "specie": "Hedera helix",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  },
+  {
+    "id": "erik",
+    "nome": "Erik",
+    "proprietario": "Niccolò",
+    "specie": "Chlorophytum comosum",
+    "icona": null,
+    "ultimaInnaffiata": null,
+    "prossimaInnaffiata": null,
+    "livello": 1
+  }
+]
