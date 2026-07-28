@@ -4,9 +4,9 @@
     "nome": "Rio",
     "proprietario": "Alice",
     "specie": "Pothos",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/rio.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-08-03T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -14,9 +14,9 @@
     "nome": "Carmine",
     "proprietario": "Alice",
     "specie": "Pothos",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/carmine.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-08-03T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -24,9 +24,9 @@
     "nome": "Ermenetiglio",
     "proprietario": "Jacopo",
     "specie": "Tiglio",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/ermenetiglio.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-07-31T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -34,9 +34,9 @@
     "nome": "Gino",
     "proprietario": "Jacopo",
     "specie": "Echeveria elegans",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/gino.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-08-14T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -44,9 +44,9 @@
     "nome": "Enrica",
     "proprietario": "Niccolò",
     "specie": "Hedera helix",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/enrica.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-08-02T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -54,9 +54,9 @@
     "nome": "Gessika",
     "proprietario": "Niccolò",
     "specie": "Rosa in miniatura",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/gessika.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-07-30T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -64,9 +64,9 @@
     "nome": "Tolino",
     "proprietario": "Niccolò",
     "specie": "Parodia maginifica",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/tolino.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-08-21T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -74,9 +74,9 @@
     "nome": "Bruce",
     "proprietario": "Niccolò",
     "specie": "Sedum Palmeri",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/bruce.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-08-11T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -84,9 +84,9 @@
     "nome": "Elsa",
     "proprietario": "Niccolò",
     "specie": "Hedera helix",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/elsa.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-08-02T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -94,9 +94,9 @@
     "nome": "Edda",
     "proprietario": "Niccolò",
     "specie": "Hedera helix",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/edda.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-08-02T22:00:00+02:00",
     "livello": 1
   },
   {
@@ -104,9 +104,9 @@
     "nome": "Erik",
     "proprietario": "Niccolò",
     "specie": "Chlorophytum comosum",
-    "icona": null,
-    "ultimaInnaffiata": null,
-    "prossimaInnaffiata": null,
+    "icona": "assets/sprites/erik.png",
+    "ultimaInnaffiata": "2026-07-27T22:00:00+02:00",
+    "prossimaInnaffiata": "2026-08-03T22:00:00+02:00",
     "livello": 1
   }
 ]
