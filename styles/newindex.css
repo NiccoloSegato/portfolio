@@ -1,22 +1,28 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: Helvetica, Arial, sans-serif;
+    background-color: #eff0f4;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-.label-pangaia {
-    font-family: 'PP-Pangaia', serif;
-    font-size: 1.5vw;
-    font-weight: 100;
-    text-align: center;
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
 }
-.label-coolvetica {
-    font-family: 'Coolvetica', sans-serif;
-    font-size: 3vw;
-    font-weight: 100;
-    text-align: center;
+
+/* PROJECT SECTION */
+.projects-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-#title-label-portfolio {
-    font-family: 'PP-Pangaia', serif;
-    font-size: 3vw;
-    text-align: center;
+.project-container {
+    width: 50%;
 }
