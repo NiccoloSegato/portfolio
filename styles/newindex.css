@@ -1,16 +1,46 @@
+@font-face {
+    font-family: 'GT-America';
+    src: url('../assets/fonts/GT-Standard-VF.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PPFormula';
+    src: url('../assets/fonts/PPFormula-CondensedBlack.otf') format('opentype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     background-color: #eff0f4;
     width: 100%;
     padding: 0;
     margin: 0;
+    font-family: 'GT-America', sans-serif;
 }
 
 #main-container {
+    padding: 30px;
+}
+.main-container-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 0;
+    justify-content: left;
+    align-items: baseline;
     width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#main-container h1 {
+    font-size: 10rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: 'PPFormula', sans-serif;
+    line-height: 1;
 }
 
 /* PROJECT SECTION */
@@ -34,4 +64,7 @@ body {
 .project-container img {
     width: 100%;
     height: 65vh;
+}
+.project-bottom-labels {
+    padding: 10px;
 }

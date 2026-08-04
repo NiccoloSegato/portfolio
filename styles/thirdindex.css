@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'ITC Garamond';
+    src: url('../assets/fonts/ITC\ Garamond\ Std\ Light\ Narrow.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('../assets/fonts/Coolvetica Rg.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* HEADER SECTION */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* MAIN SECTION */
+#main-header {
+    width: 90%;
+    margin: 0 auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+#main-top-duo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+}
+#main-top-duo img {
+    width: calc(50% - 25px);
+    height: 80vh;
+    object-fit: cover;
+}
+#main-right-div {
+    background-color: #FE3D22;
+    height: calc(80vh - 48px);
+    width: calc(50% - 73px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+}
+#main-right-div h3 {
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+    font-size: clamp(60px, 10vw, 90px);
+    line-height: 0.85;
+    letter-spacing: -2px;
+    margin: 8px 0 0 0;
+}
+#main-right-div p {
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+    font-size: clamp(16px, 1.4vw, 22px);
+    line-height: 1.4;
+    margin: 24px;
+}
+#main-name {
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+    font-size: clamp(60px, 5vw, 48px);
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+#main-mansion {
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+    font-size: clamp(60px, 14vw, 260px);
+    line-height: 0.85;
+    letter-spacing: -2px;
+    margin: 8px 0 0 0;
+    width: 100%;
+}
+
+#main-subtitle {
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: clamp(16px, 1.4vw, 22px);
+    line-height: 1.4;
+    margin-top: 24px;
+}
+
+/* PROJECTS SECTION */
+.wide-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(90% - 48px);
+    margin: 0 auto;
+    margin-bottom: 24px;
+    height: 70vh;
+    background-color: #2f2f2f;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+}
+.wide-project::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(49, 50, 50, 0.6);
+    z-index: 1;
+}
+.project-left-column {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    font-family: 'ITC Garamond', sans-serif;
+    z-index: 2;
+}
+.project-left-column h2, .project-left-column p {
+    margin: 0;
+}
+.project-right-column {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    margin: 0;
+    font-family: 'ITC Garamond', sans-serif;
+    z-index: 2;
+}
+.project-right-column h2, .project-right-column p {
+    margin: 0;
+}
+.small-projects-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    gap: 24px;
+}
+.small-project {
+    width: calc(50% - 60px);
+    height: 70vh;
+    background-color: #2f2f2f;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* PROJECTS IMAGES */
+#project-venerus {
+    background-image: url('../assets/images/projects/unverse/3.webp');
+    background-size: cover;
+    background-position: top center;
+}
