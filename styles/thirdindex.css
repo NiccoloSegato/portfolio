@@ -107,6 +107,14 @@ header {
 }
 
 /* PROJECTS SECTION */
+#projects-title {
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+    font-size: clamp(60px, 10vw, 90px);
+    line-height: 0.85;
+    width: fit-content;
+    margin: 100px 5% 40px 5%;
+}
 .wide-project {
     display: flex;
     flex-direction: row;
@@ -154,6 +162,15 @@ header {
 .project-right-column h2, .project-right-column p {
     margin: 0;
 }
+.project-left-column h2 {
+    font-size: 60px;
+    font-weight: 100;
+}
+.project-left-column p {
+    font-size: 26px;
+    font-weight: 100;
+    width: 75%;
+}
 .small-projects-row {
     display: flex;
     flex-direction: row;
@@ -169,6 +186,10 @@ header {
     padding: 24px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
 }
 
 /* PROJECTS IMAGES */
