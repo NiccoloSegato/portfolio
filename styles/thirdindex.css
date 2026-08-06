@@ -14,31 +14,67 @@
 }
 
 body {
-    background-color: #1a1a1a;
     margin: 0;
     padding: 0;
-    color: white;
 }
 
-/* HEADER SECTION */
+/* HEADER */
 header {
+    height: 40vh;
+    width: 90%;
+    padding: 0 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
 }
-
-/* MAIN SECTION */
-#main-header {
-    width: 90%;
-    margin: 0 auto;
-    height: 90vh;
+#header-links {
+    width: 50%;
+    text-align: right;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+}
+#header-links a {
+    font-family: 'ITC Garamond', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+}
+#header-links a:hover {
+    text-decoration: underline;
+}
+#header-name, #header-location {
+    font-family: 'ITC Garamond', sans-serif;
+    width: 25%;
+    text-align: right;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#header-name p, #header-location p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+/* MAIN SECTION */
+#main-header {
+    position: relative;
+    width: 90%;
+    margin: 0 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: left;
+    padding: 0 5%;
+    height: 55vh;
+}
+#main-header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #main-top-duo {
     display: flex;
@@ -87,14 +123,17 @@ header {
     margin: 0;
 }
 
-#main-mansion {
+#main-mansion-left, #main-mansion-right {
     font-family: 'Coolvetica', sans-serif;
     font-weight: 400;
-    font-size: clamp(60px, 14vw, 260px);
+    font-size: clamp(30px, 10vw, 150px);
     line-height: 0.85;
     letter-spacing: -2px;
     margin: 8px 0 0 0;
     width: 100%;
+}
+#main-mansion-right {
+    text-align: right;
 }
 
 #main-subtitle {
@@ -106,7 +145,129 @@ header {
     margin-top: 24px;
 }
 
+#main-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    height: 80vh;
+}
+#main-intro p {
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+    font-size: clamp(60px, 10vw, 90px);
+    line-height: 0.85;
+    letter-spacing: -2px;
+    margin: 8px 0 0 0;
+    width: 30%;
+}
+#main-intro div {
+    width: 70%;
+}
+
+#main-portrait {
+    width: 90%;
+    height: 60vh;
+    margin: 100px 5%;
+    object-fit: cover;
+}
+#projects-main-title {
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+    font-size: clamp(30px, 10vw, 150px);
+    line-height: 0.85;
+    margin-left: 5%;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.nav-category {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 60vh;
+}
+main nav {
+    width: 30%;
+    padding: 0 0 0 5%;
+    container-type: inline-size;
+    position: relative;
+}
+main nav h3 {
+    font-family: 'ITC Garamond', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: clamp(30px, 10cqw, 20cqw);
+    margin: 0;
+    line-height: 0.85;
+}
+main nav p {
+    font-family: 'ITC Garamond', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+main #main-navaside {
+    width: 70%;
+    margin: 0 5% 0 0;
+}
+
 /* PROJECTS SECTION */
+.project-group {
+    display: block;
+}
+.project-card {
+    width: 100%;
+    margin-bottom: 200px;
+}
+.project-label-intro {
+    font-family: 'ITC Garamond', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
+.divider {
+    display: block;
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0 50px 0;
+}
+.project-new-title {
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+    font-size: clamp(30px, 10vw, 150px);
+    line-height: 0.85;
+    margin: 0;
+}
+.project-label-description {
+    font-family: 'ITC Garamond', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+.project-card img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+
+
 #projects-title {
     font-family: 'Coolvetica', sans-serif;
     font-weight: 400;
@@ -191,10 +352,37 @@ header {
     justify-content: space-between;
     margin-bottom: 24px;
 }
+.small-project::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(49, 50, 50, 0.6);
+    z-index: 1;
+}
 
 /* PROJECTS IMAGES */
+#project-nolbrick {
+    background-image: url('../assets/images/projects/nolbrick/1.webp');
+    background-size: cover;
+    background-position: top center;
+}
+#project-oltrelavisione {
+    background-image: url('../assets/images/projects/oltrelavisione/1.webp');
+    background-size: cover;
+    background-position: top center;
+}
+#project-palazzofiloni {
+    background-image: url('../assets/images/projects/palazzofiloni/1.webp');
+    background-size: cover;
+    background-position: top center;
+}
 #project-venerus {
     background-image: url('../assets/images/projects/unverse/3.webp');
+    background-size: cover;
+    background-position: top center;
+}
+#project-edusync {
+    background-image: url('../assets/images/projects/edusync/6.webp');
     background-size: cover;
     background-position: top center;
 }

@@ -7,69 +7,158 @@
     <link rel="stylesheet" href="styles/thirdindex.css">
 </head>
 <body>
-    <!--<header>
-        <p>Niccolò Segato</p>
-        <p>DESIGNER/DEVELOPER</p>
-        <p>[ABOUT]</p>
-    </header>-->
+    <header>
+        <div id="header-links">
+            <a href="projects/index.html">/ projects</a>
+            <a href="about.html">/ about</a>
+            <a href="contact.html">/ contact</a>
+        </div>
+        <div id="header-name">
+            <p>niccolò segato</p>
+        </div>
+        <div id="header-location">
+            <p>milano, italy</p>
+        </div>
+    </header>
+
     <div id="main-header">
-        <h1 id="main-name">Niccolò Segato</h1>
-        <h1 id="main-mansion">DESIGNER</br>DEVELOPER</h1>
-        <h2 id="main-subtitle">Designer and communicator with a background in technology, educated in Milan. I combine an engineering mindset with visual sensitivity to create thoughtful, coherent visual systems.</h2>
+        <div id="main-header-title">
+            <h1 id="main-mansion-left">designer</h1>
+            <h1 id="main-mansion-right">developer</h1>
+        </div>
     </div>
+
+    <img id="main-portrait" src="assets/images/portrait.png" alt="Portrait">
     
+    <h1 id="projects-main-title">projects</h1>
+
     <main>
-        <div id="main-top-duo">
-            <img src="assets/images/portrait.png" alt="Portrait of Niccolò Segato" id="main-portrait">
-            <div id="main-right-div">
-                <h3>Design as a system</h3>
-                <p>Design is a system of rules and principles that can be applied to create meaningful experiences. I believe that design should be approached with a holistic mindset, considering the entire user journey and the context in which the design will be used.</p>
+        <nav>
+            <div class="nav-category" data-category="1">
+                <h3>/ web and<br>digital design</h3>
+                <p>Description of what the heck is Digital and Web design</p>
+            </div>
+            <div class="nav-category" data-category="2">
+                <h3>/ editorial and<br>print design</h3>
+                <p>Description of what the heck is Editorial and Print design</p>
+            </div>
+        </nav>
+        <div id="main-navaside">
+            <div id="projects">
+                <section class="project-group" data-category="1">
+                    <div class="project-card">
+                        <p class="project-label-intro">[2025]</p>
+                        <h3 class="project-new-title">UNVERSE</h3>
+                        <p class="project-label-description">Unverse is a university project that explores artist Venerus’ emotions through interactive and immersive environments.</p>
+                        <img src="assets/images/projects/unverse/3.webp" alt="Unverse project template">
+                    </div>
+                    <div class="project-card">
+                        <p class="project-label-intro">[2024]</p>
+                        <h3 class="project-new-title">EDUSYNC</h3>
+                        <p class="project-label-description">Unverse is a university project that explores artist Venerus’ emotions through interactive and immersive environments.</p>
+                        <img src="assets/images/projects/edusync/1.webp" alt="EduSync project template">
+                    </div>
+                    <div class="project-card">
+                        <p class="project-label-intro">[2021]</p>
+                        <h3 class="project-new-title">COSPACE CANARIAS</h3>
+                        <p class="project-label-description">Unverse is a university project that explores artist Venerus’ emotions through interactive and immersive environments.</p>
+                        <img src="assets/images/projects/cospace/1.webp" alt="EduSync project template">
+                    </div>
+                </section>
+                <section class="project-group" data-category="2">
+                    <div class="project-card">
+                        <p class="project-label-intro">[2025]</p>
+                        <h3 class="project-new-title">NOLBRICK</h3>
+                        <p class="project-label-description">Unverse is a university project that explores artist Venerus’ emotions through interactive and immersive environments.</p>
+                        <img src="assets/images/projects/nolbrick/1.webp" alt="EduSync project template">
+                    </div>
+                </section>
             </div>
         </div>
 
-        <h1 id="projects-title">Projects</h1>
-        <div class="wide-project" id="project-venerus">
-            <div class="project-left-column">
-                <h2>UNVERSE</h2>
-                <p>Unverse is a university project that explores artist Venerus’ emotions through interactive and immersive environments.</p>
-            </div>
-            <div class="project-right-column">
-                <p>2025</p>
-                <p>Politecnico di Milano</p>
-            </div>
-        </div>
-        <div class="small-projects-row">
-            <div class="small-project">
-                <div class="project-left-column">
-                    <h2>OLTRE</br>LA VISIONE</h2>
-                    <p>Oltre la Visione is a magazine that traces the life and work of Franco Grignani, one of the most influential Italian designers of the 20th century.</p>
+
+
+
+
+
+
+                <!--<div class="wide-project" id="project-nolbrick">
+                    <div class="project-left-column">
+                        <h2>NOLBRICK</br>EXPO OSAKA 2025</h2>
+                        <p>I co-designed the bookmark distributed to participants of the NoLBrick workshop at EXPO OSAKA 2025: a small tool created to support the learning of Italian beyond the workshop itself.</p>
+                    </div>
+                    <div class="project-right-column">
+                        <p>2025</p>
+                        <p>EXPO Osaka 2025</p>
+                    </div>
                 </div>
-                <div class="project-right-column">
-                    <p>2024</p>
-                    <p>Politecnico di Milano</p>
+                <div class="small-projects-row">
+                    <div class="small-project" id="project-oltrelavisione">
+                        <div class="project-left-column">
+                            <h2>OLTRE</br>LA VISIONE</h2>
+                            <p>Oltre la Visione is a magazine that traces the life and work of Franco Grignani, one of the most influential Italian designers of the 20th century.</p>
+                        </div>
+                        <div class="project-right-column">
+                            <p>2024</p>
+                            <p>Politecnico di Milano</p>
+                        </div>
+                    </div>
+                    <div class="small-project" id="project-palazzofiloni">
+                        <div class="project-left-column">
+                            <h2>PALAZZO FILONI</br>MDW 2026</h2>
+                            <p>A book designed for MILANO DESIGN WEEK 2026, exploring how cultural heritage lives not only in historic spaces, but also in the gestures, flavours and traditions that shape a territory.</p>
+                        </div>
+                        <div class="project-right-column">
+                            <p>2026</p>
+                            <p>Politecnico di Milano</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wide-project" id="project-venerus">
+                    <div class="project-left-column">
+                        <h2>UNVERSE</h2>
+                        <p>Unverse is a university project that explores artist Venerus’ emotions through interactive and immersive environments.</p>
+                    </div>
+                    <div class="project-right-column">
+                        <p>2025</p>
+                        <p>Politecnico di Milano</p>
+                    </div>
+                </div>
+                <div class="small-projects-row">
+                    <div class="small-project">
+                        <div class="project-left-column">
+                            <h2>BERGAMO SCIENZA</h2>
+                            <p>Oltre la Visione is a magazine that traces the life and work of Franco Grignani, one of the most influential Italian designers of the 20th century.</p>
+                        </div>
+                        <div class="project-right-column">
+                            <p>2026</p>
+                            <p>BergamoScienza Foundation</p>
+                        </div>
+                    </div>
+                    <div class="small-project" id="project-edusync">
+                        <div class="project-left-column">
+                            <h2>EDUSYNC</h2>
+                            <p>A book designed for Milan Design Week 2026, exploring how cultural heritage lives not only in historic spaces, but also in the gestures, flavours and traditions that shape a territory.</p>
+                        </div>
+                        <div class="project-right-column">
+                            <p>2024</p>
+                            <p>EDUSYNC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wide-project">
+                    <div class="project-left-column">
+                        <h2>HOTEL REGINA</br>SALSOMAGGIORE TERME</h2>
+                        <p>I co-designed the bookmark distributed to participants of the NoLBrick workshop at EXPO OSAKA 2025: a small tool created to support the learning of Italian beyond the workshop itself.</p>
+                    </div>
+                    <div class="project-right-column">
+                        <p>2026</p>
+                        <p>Hotel Regina</p>
+                    </div>
                 </div>
             </div>
-            <div class="small-project">
-                <div class="project-left-column">
-                    <h2>PALAZZO FILONI</h2>
-                    <p>A book designed for Milan Design Week 2026, exploring how cultural heritage lives not only in historic spaces, but also in the gestures, flavours and traditions that shape a territory.</p>
-                </div>
-                <div class="project-right-column">
-                    <p>2026</p>
-                    <p>Politecnico di Milano</p>
-                </div>
-            </div>
-        </div>
-        <div class="wide-project">
-            <div class="project-left-column">
-                <h2>NOLBRICK</br>EXPO OSAKA 2025</h2>
-                <p>I co-designed the bookmark distributed to participants of the NoLBrick workshop at EXPO OSAKA 2025: a small tool created to support the learning of Italian beyond the workshop itself.</p>
-            </div>
-            <div class="project-right-column">
-                <p>2025</p>
-                <p>EXPO Osaka 2025</p>
-            </div>
-        </div>
+        </div>-->
     </main>
+    <script src="scripts/nav-sticky.js" defer></script>
 </body>
 </html>
