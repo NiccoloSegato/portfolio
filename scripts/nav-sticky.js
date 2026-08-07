@@ -10,12 +10,20 @@
 (function () {
     function syncNavCategoryHeights() {
         var groups = document.querySelectorAll('#main-navaside .project-group');
-        var navCategories = document.querySelectorAll('main nav .nav-category');
- 
+           var navSpacers = document.querySelectorAll('main nav .nav-category-spacer');
+
+        if (groups.length !== navSpacers.length) {
+            console.warn(
+                '[nav-sticky] Il numero di .nav-category-spacer (' + navSpacers.length +
+                ') non corrisponde al numero di .project-group (' + groups.length +
+                '). Controlla che ci sia uno spacer per ogni .project-group, nello stesso ordine.'
+            );
+        }
+
         groups.forEach(function (group, i) {
-            var navCategory = navCategories[i];
-            if (navCategory) {
-                navCategory.style.minHeight = group.offsetHeight + 'px';
+            var navSpacer = navSpacers[i];
+            if (navSpacer) {
+                navSpacer.style.minHeight = group.offsetHeight + 'px';
             }
         });
     }
@@ -40,4 +48,8 @@
             img.addEventListener('load', syncNavCategoryHeights);
         }
     });
+
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(syncNavCategoryHeights);
+    }
 })();

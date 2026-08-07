@@ -186,13 +186,25 @@ main {
     justify-content: space-between;
     align-items: stretch;
 }
+.nav-category-spacer {
+    position: relative;
+    min-height: 60vh;
+}
 .nav-category {
     position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 60vh;
+    top: 50px;
+    margin-bottom: 150px;
+}
+.nav-category a {
+    font-family: 'ITC Garamond', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.nav-category a:hover {
+    text-decoration: underline;
 }
 main nav {
     width: 30%;
@@ -222,13 +234,31 @@ main #main-navaside {
     margin: 0 5% 0 0;
 }
 
+#about {
+    width: 80%;
+    margin: 200px auto;
+    padding: 50px 5%;
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+    font-size: clamp(20px, 3vw, 100px);
+    line-height: 1.4;
+    background-color: white;
+    box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.05);
+    height: 70vh;
+}
+#about span {
+    color: #8c8c8c;
+    font-family: 'ITC Garamond', sans-serif;
+}
+
 /* PROJECTS SECTION */
 .project-group {
     display: block;
+    overflow: hidden
 }
 .project-card {
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 .project-label-intro {
     font-family: 'ITC Garamond', sans-serif;
@@ -249,6 +279,13 @@ main #main-navaside {
     font-family: 'Coolvetica', sans-serif;
     font-weight: 400;
     font-size: clamp(30px, 10vw, 150px);
+    line-height: 0.85;
+    margin: 0;
+}
+.project-new-subtitle {
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+    font-size: clamp(20px, 4vw, 80px);
     line-height: 0.85;
     margin: 0;
 }
