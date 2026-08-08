@@ -45,7 +45,7 @@ header {
 #header-links a:hover {
     text-decoration: underline;
 }
-#header-name, #header-location {
+#header-contact, #header-location {
     font-family: 'ITC Garamond', sans-serif;
     width: 25%;
     text-align: right;
@@ -54,7 +54,16 @@ header {
     flex-direction: column;
     justify-content: flex-end;
 }
-#header-name p, #header-location p {
+#header-name {
+    font-family: 'ITC Garamond', sans-serif;
+    width: 50%;
+    text-align: right;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#header-name p, #header-location p, #header-contact p {
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -185,6 +194,7 @@ main {
     gap: 24px;
     justify-content: space-between;
     align-items: stretch;
+    margin-top: 400px;
 }
 .nav-category-spacer {
     position: relative;
@@ -235,20 +245,30 @@ main #main-navaside {
 }
 
 #about {
-    width: 80%;
-    margin: 200px auto;
-    padding: 50px 5%;
-    font-family: 'Coolvetica', sans-serif;
-    font-weight: 400;
-    font-size: clamp(20px, 3vw, 100px);
-    line-height: 1.4;
-    background-color: white;
-    box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.05);
-    height: 70vh;
+    border-top: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-#about span {
-    color: #8c8c8c;
+#about-title {
+    width: 50%;
+    text-align: right;
     font-family: 'ITC Garamond', sans-serif;
+    font-weight: 600;
+}
+#about-subtitle {
+    width: 25%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+}
+#about-text {
+    width: 25%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
 }
 
 /* PROJECTS SECTION */

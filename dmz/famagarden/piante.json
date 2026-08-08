@@ -5,7 +5,7 @@
     "proprietario": "Alice",
     "specie": "Pothos",
     "icona": "assets/sprites/rio.png",
-    "ultimaInnaffiata": "2026-08-05T23:40:00+02:00",
+    "ultimaInnaffiata": "2026-08-08T19:40:00+02:00",
     "prossimaInnaffiata": "2026-08-02T19:00:00+02:00",
     "livello": 1
   },
@@ -25,7 +25,7 @@
     "proprietario": "Jacopo",
     "specie": "Tiglio",
     "icona": "assets/sprites/ermenetiglio.png",
-    "ultimaInnaffiata": "2026-08-05T23:40:00+02:00",
+    "ultimaInnaffiata": "2026-08-08T19:40:00+02:00",
     "prossimaInnaffiata": "2026-07-31T22:00:00+02:00",
     "livello": 1
   },
@@ -45,7 +45,7 @@
     "proprietario": "Niccolò",
     "specie": "Hedera helix",
     "icona": "assets/sprites/enrica.png",
-    "ultimaInnaffiata": "2026-08-05T23:40:00+02:00",
+    "ultimaInnaffiata": "2026-08-08T19:40:00+02:00",
     "prossimaInnaffiata": "2026-08-02T22:00:00+02:00",
     "livello": 1
   },
@@ -55,7 +55,7 @@
     "proprietario": "Niccolò",
     "specie": "Rosa in miniatura",
     "icona": "assets/sprites/gessika.png",
-    "ultimaInnaffiata": "2026-08-05T23:40:00+02:00",
+    "ultimaInnaffiata": "2026-08-08T19:40:00+02:00",
     "prossimaInnaffiata": "2026-07-30T22:00:00+02:00",
     "livello": 1
   },
@@ -95,7 +95,7 @@
     "proprietario": "Niccolò",
     "specie": "Hedera helix",
     "icona": "assets/sprites/edda.png",
-    "ultimaInnaffiata": "2026-08-05T23:40:00+02:00",
+    "ultimaInnaffiata": "2026-08-08T19:40:00+02:00",
     "prossimaInnaffiata": "2026-08-02T22:00:00+02:00",
     "livello": 1
   },
