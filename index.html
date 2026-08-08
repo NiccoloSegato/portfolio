@@ -3,160 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Niccolò Segato</title>
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link href="styles/fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="styles/fontawesome/css/solid.css" rel="stylesheet" />
-    <link href="styles/fontawesome/css/brands.css" rel="stylesheet" />
-    <script src="scripts/index.js" defer></script>
+    <title>Niccolò Segato - Portfolio</title>
+    <link rel="stylesheet" href="styles/thirdindex.css">
 </head>
 <body>
     <header>
-        <h1>NICCOLO' SEGATO</h1>
-        <nav>
-            <ul id="nav-links">
-                <li><a class="nav-link-href" href="#about" id="about-header">About</a></li>
-                <li><a class="nav-link-href" href="projects/index.html" id="projects-header">Projects</a></li>
-                <li><a class="nav-link-href" href="#contact" id="contact-header">Contact</a></li>
-            </ul>
-        </nav>
+        <div id="header-links">
+            <a href="#projects">/ projects</a>
+            <a href="#about">/ about</a>
+            <a href="#contacts">/ contact</a>
+        </div>
+        <div id="header-name">
+            <p>niccolò segato</p>
+        </div>
+        <div id="header-location">
+            <p>milano, italy</p>
+        </div>
     </header>
 
-    <div id="spacer"></div>
-    
-    <main>
-        <div id="main-content">
-            <h1> </h1>
-            <video autoplay muted loop playsinline preload="auto" id="bg-video">
-                <source src="assets/images/portfolio.webm" type="video/webm">
-                <source src="assets/images/portfolio.mp4" type="video/mp4">
-                Video unavailable
-            </video>
+    <div id="main-header">
+        <div id="main-header-title">
+            <h1 id="main-mansion-left">designer</h1>
+            <h1 id="main-mansion-right">developer</h1>
+        </div>
+    </div>
+
+    <main id="projects">
+        <nav>
+            <div class="nav-category-spacer" data-category="1">
+                <div class="nav-category">
+                    <h3>web and<br>digital design</h3>
+                    <p>Bridging my technical background with design thinking to create meaningful digital experiences</p>
+                    <a href="projects/index.html">/ view other 3 projects</a>
+                </div>
+            </div>
+            <div class="nav-category-spacer" data-category="2">
+                <div class="nav-category">
+                    <h3>editorial and<br>print design</h3>
+                    <p>Giving content structure, rhythm and physical form</p>
+                    <a href="projects/index.html">/ view other 2 projects</a>
+                </div>
+            </div>
+            <div class="nav-category-spacer" data-category="3">
+                <div class="nav-category">
+                    <h3>branding and<br>identity design</h3>
+                    <p>Building identities where strategy, visual language and context come together</p>
+                    <a href="projects/index.html">/ view another project</a>
+                </div>
+            </div>
+        </nav>
+        <div id="main-navaside">
+            <div id="projects">
+                <section class="project-group" data-category="1">
+                    <div class="project-card">
+                        <p class="project-label-intro">[2026]</p>
+                        <h3 class="project-new-title">ROSSIGNOL</h3>
+                        <h4 class="project-new-subtitle">FORZA+ APP</h4>
+                        <p class="project-label-description">FORZA+ is a brand extension of Rossignol’s FORZA ski line — an app that brings the world of carving into its very code.</p>
+                        <img src="assets/images/projects/rossignol/1.webp" alt="A hand holding an iPhone displaying the Rossignol Forza+ app">
+                    </div>
+                    <div class="project-card">
+                        <p class="project-label-intro">[2025]</p>
+                        <h3 class="project-new-title">UNVERSE</h3>
+                        <p class="project-label-description">Unverse is an interactive website that explores artist Venerus’ emotions through interactive and immersive environments.</p>
+                        <img src="assets/images/projects/unverse/3.webp" alt="Venerus singing with a microphone in his hand" style="object-position: top;">
+                    </div>
+                </section>
+                <section class="project-group" data-category="2">
+                    <div class="project-card">
+                        <p class="project-label-intro">[2025]</p>
+                        <h3 class="project-new-title">NOLBRICK</h3>
+                        <h4 class="project-new-subtitle">EXPO OSAKA 2025</h4>
+                        <p class="project-label-description">I  co-designed the bookmark distributed to participants of the NoLBrick workshop at EXPO OSAKA 2025: a small tool created to support the learning of Italian beyond the workshop itself.</p>
+                        <img src="assets/images/projects/nolbrick/1.webp" alt="Participants of the workshop looking at some italian landmarks and transcribing their names in Italian on a small bookmark">
+                    </div>
+                    <div class="project-card">
+                        <p class="project-label-intro">[2025]</p>
+                        <h3 class="project-new-title">BAUHAUS</h3>
+                        <h4 class="project-new-subtitle">FANTASIA TYPE</h4>
+                        <p class="project-label-description">An in-depth research project developed with Fantasia Type, exploring Bauhaus type design and its lasting legacy.</p>
+                        <img src="assets/images/projects/bauhaus/1.webp" alt="Book cover of the Bauhaus research project, with a black background and a white square in the middle, containing the title of the project in a Bauhaus-inspired typeface">
+                    </div>
+                </section>
+                <section class="project-group" data-category="3">
+                    <div class="project-card">
+                        <p class="project-label-intro">[2026]</p>
+                        <h3 class="project-new-title">PALAZZO FILONI</h3>
+                        <h4 class="project-new-subtitle">MILANO DESIGN WEEK 2026</h4>
+                        <p class="project-label-description">A brand identity for Palazzo Filoni, presented during Milan Design Week 2026, exploring cultural heritage beyond historic spaces through the gestures, flavors, and traditions that shape a territory.</p>
+                        <img src="assets/images/projects/palazzofiloni/1.webp" alt="EduSync project template">
+                    </div>
+                    <div class="project-card">
+                        <p class="project-label-intro">[2026]</p>
+                        <h3 class="project-new-title">HOTEL REGINA</h3>
+                        <p class="project-label-description">A visual identity project developed for the Municipality of Salsomaggiore Terme, aimed at revitalizing the historic Albergo Regina.</p>
+                        <img src="assets/images/projects/salsomaggiore/1.webp" alt="EduSync project template">
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 
-    <section id="about">
-        <h2>About me</h2>
-        <div id="about-main-card">
-            <div id="about-left-card">
-                <p id="about-cit">Simplicity is my superpower. I turn complex ideas into experiences users love.</p>
-                <div>
-                    <p><i class="fa-solid fa-location-dot"></i> Milano</p>
-                    <p><i class="fa-solid fa-graduation-cap"></i> Politecnico di Milano</p>
-                </div>
-            </div>
-            <div id="about-right-card">
-                <div id="about-right-card-top">
-                    <p>PROGRAMMER,<br>COMMUNICATION DESIGNER</p>
-                </div>
-                <div id="about-right-card-bottom">
-                    <img src="assets/images/niccolo.webp" alt="Niccolò Segato" id="about-image">
-                </div>
-            </div>
+    <div id="about">
+        <div id="about-title">
+            <p>about me</p>
         </div>
-        <p>Born in Bologna and based in Milan, I grew up with a passion for design applied to computer science. Hours and hours spent programming, drawing UIs, designing UX and studying the best communication strategies led me, together with my studies, to actively participate in the Milanese design panorama. My path began at the technical institute with a computer science major, where I learned all the notions of programming and networks and the Internet. I specialized in an engineering course that then led me to the Faculty of Design at the Politecnico di Milano, one of the world's excellences in Design, where I still study and specialize. In my free time, I like to follow F1, run and program, my great passion.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <p style="margin-bottom: 20px;">Take a look to my recent projects, or browse them all.</p>
-        <div class="projects-container">
-            <div class="project-card" id="project-card-1">
-                <h3>PoliReplay</h3>
-                <p>Motore di ricerca contenente più di 3000 lezioni online del Politecnico di Milano</p>
-                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
-            </div>
-            <div class="project-card" id="project-card-2">
-                <h3>Unverse</h3>
-                <p>Un luogo in continua trasformazione che svela di pensieri, paesaggi e ispirazioni di Venerus.</p>
-                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
-            </div>
-            <div class="project-card" id="project-card-3">
-                <h3>EduSync</h3>
-                <p>Gestionali general-purpose per la didattica e la gestione delle risorse di un business.</p>
-                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
-            </div>
-            <div class="project-card" id="project-card-4">
-                <h3>CoSpace Canarias</h3>
-                <p>Prenota e metti in affitto Co-Living, Co-Working e Co-Experiences, in una singola app</p>
-                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
-            </div>
-            <div class="project-card" id="project-card-5">
-                <h3>Chrysalis</h3>
-                <p>(Meta)Progetto di innovazione tecnologica e sociale nell'ambito della società e del design.</p>
-                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
-            </div>
-            <div class="project-card" id="project-card-6">
-                <h3>Altri progetti</h3>
-                <p>Scopri tutti i progetti e i prodotti realizzati</p>
-                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Vedi tutti</a>
-            </div>
+        <div id="about-subtitle">
+            <p>location</p>
+            <p>education</p>
         </div>
-    </section>
-
-    <section id="job">
-        <h2>Job Experience</h2>
-        <p>Here is a summary of my professional experience.</p>
-        <div id="jobs-container">
-            <div class="job-card">
-                <h3>Specialist</h3>
-                <p><strong class="company-name">APPLE</strong></p>
-                <p class="job-description">Drive brand loyalty and acquire new customers through the sale of Apple products and services.</p>
-                <p class="job-duration">Current - <span id="job-timer"></span></p>
-            </div>
-            <div class="job-card">
-                <h3>Junior Software Developer Engineer</h3>
-                <p><strong class="company-name">NOKIA</strong></p>
-                <p class="job-description">Developed software for encapsulating transmissions in fiber-optic network nodes, supporting backbone and submarine links at hundreds of Gbps.</p>
-                <p class="job-duration">May 2023 - September 2023 (4 months)</p>
-            </div>
-            <div class="job-card">
-                <h3>IT Consultant</h3>
-                <p><strong class="company-name">GUIDI&PARTNERS</strong></p>
-                <p class="job-description">Modernized IT infrastructure with enhanced security and reliability. Developed management software using PHP and Angular.</p>
-                <p class="job-duration">May 2022 - April 2023 (1 year)</p>
-            </div>
-            <div class="job-card">
-                <h3>.NET Developer</h3>
-                <p><strong class="company-name">AXEL TECHNOLOGY</strong></p>
-                <p class="job-description">Developed applications for transmission recognition and to facilitate TV and radio broadcasting.</p>
-                <p class="job-duration">July 2018 - August 2018 (2 months)</p>
-            </div>
+        <div id="about-text">
+            <p>milano, italy</p>
+            <p>politecnico di milano</br>bachelor's degree in communication design</p>
         </div>
-    </section>
+    </div>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Welcome to my blog! Here I share my thoughts on web development, design, and more.</p>
-        <div id="blog-posts">
-            <article class="blog-post" style="background-color: rgb(255, 242, 205); border-color: rgb(255, 111, 0);">
-                <h3 style="color: rgb(255, 111, 0);">Understanding Web Development</h3>
-                <p>Web development is a vast field that combines creativity and technical skills. In this post, I explore the basics of web development and its importance in today's digital world.</p>
-                <a href="#read-more" style="background-color: rgb(255, 111, 0); color: white;" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Read more</a>
-            </article>
-            <article class="blog-post" style="background-color: rgb(205, 233, 255); border-color: rgb(0, 61, 255);">
-                <h3 style="color: rgb(0, 61, 255);">Design Principles for Effective UI</h3>
-                <p>Good design is crucial for user experience. Here, I discuss key design principles that can help create intuitive and engaging user interfaces.</p>
-                <a href="#read-more" style="background-color: rgb(0, 61, 255); color: white;" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Read more</a>
-            </article>
+    <div id="contacts">
+        <div id="contacts-title">
+            <p>contacts</p>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out!</p>
-        <a href="mailto:nic@segato.net" id="main-contact-btn">nic@segato.net</a>
-        <p>You can also find me on those platforms:</p>
-        <div id="social-links">
-            <a href="https://github.com/niccolosegato" class="animated-button"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/niccolo-segato/" class="animated-button"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+        <div id="contacts-subtitle">
+            <p>email</p>
+            <p>phone</p>
+            <p>linkedin</p>
+            <p>github</p>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Niccolo' Segato. All rights reserved.</p>
-    </footer>
-    <script async src="https://scripts.withcabin.com/hello.js"></script>
+        <div id="contacts-info">
+            <p>niccolo.segato@icloud.com</p>
+            <p>+393347346899</p>
+            <a href="https://www.linkedin.com/in/niccolo-segato/" target="_blank">linkedin.com/in/niccolo-segato/</a>
+            <a href="https://github.com/NiccoloSegato" target="_blank">github.com/NiccoloSegato</a>
+        </div>
+    </div>
+    <script src="scripts/nav-sticky.js" defer></script>
 </body>
 </html>

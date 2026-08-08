@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Niccolò Segato</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="styles/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="styles/fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="styles/fontawesome/css/brands.css" rel="stylesheet" />
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>NICCOLO' SEGATO</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a class="nav-link-href" href="#about" id="about-header">About</a></li>
+                <li><a class="nav-link-href" href="projects/index.html" id="projects-header">Projects</a></li>
+                <li><a class="nav-link-href" href="#contact" id="contact-header">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="spacer"></div>
+    
+    <main>
+        <div id="main-content">
+            <h1> </h1>
+            <video autoplay muted loop playsinline preload="auto" id="bg-video">
+                <source src="assets/images/portfolio.webm" type="video/webm">
+                <source src="assets/images/portfolio.mp4" type="video/mp4">
+                Video unavailable
+            </video>
+        </div>
+    </main>
+
+    <section id="about">
+        <h2>About me</h2>
+        <div id="about-main-card">
+            <div id="about-left-card">
+                <p id="about-cit">Simplicity is my superpower. I turn complex ideas into experiences users love.</p>
+                <div>
+                    <p><i class="fa-solid fa-location-dot"></i> Milano</p>
+                    <p><i class="fa-solid fa-graduation-cap"></i> Politecnico di Milano</p>
+                </div>
+            </div>
+            <div id="about-right-card">
+                <div id="about-right-card-top">
+                    <p>PROGRAMMER,<br>COMMUNICATION DESIGNER</p>
+                </div>
+                <div id="about-right-card-bottom">
+                    <img src="assets/images/niccolo.webp" alt="Niccolò Segato" id="about-image">
+                </div>
+            </div>
+        </div>
+        <p>Born in Bologna and based in Milan, I grew up with a passion for design applied to computer science. Hours and hours spent programming, drawing UIs, designing UX and studying the best communication strategies led me, together with my studies, to actively participate in the Milanese design panorama. My path began at the technical institute with a computer science major, where I learned all the notions of programming and networks and the Internet. I specialized in an engineering course that then led me to the Faculty of Design at the Politecnico di Milano, one of the world's excellences in Design, where I still study and specialize. In my free time, I like to follow F1, run and program, my great passion.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p style="margin-bottom: 20px;">Take a look to my recent projects, or browse them all.</p>
+        <div class="projects-container">
+            <div class="project-card" id="project-card-1">
+                <h3>PoliReplay</h3>
+                <p>Motore di ricerca contenente più di 3000 lezioni online del Politecnico di Milano</p>
+                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
+            </div>
+            <div class="project-card" id="project-card-2">
+                <h3>Unverse</h3>
+                <p>Un luogo in continua trasformazione che svela di pensieri, paesaggi e ispirazioni di Venerus.</p>
+                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
+            </div>
+            <div class="project-card" id="project-card-3">
+                <h3>EduSync</h3>
+                <p>Gestionali general-purpose per la didattica e la gestione delle risorse di un business.</p>
+                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
+            </div>
+            <div class="project-card" id="project-card-4">
+                <h3>CoSpace Canarias</h3>
+                <p>Prenota e metti in affitto Co-Living, Co-Working e Co-Experiences, in una singola app</p>
+                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
+            </div>
+            <div class="project-card" id="project-card-5">
+                <h3>Chrysalis</h3>
+                <p>(Meta)Progetto di innovazione tecnologica e sociale nell'ambito della società e del design.</p>
+                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Discover more</a>
+            </div>
+            <div class="project-card" id="project-card-6">
+                <h3>Altri progetti</h3>
+                <p>Scopri tutti i progetti e i prodotti realizzati</p>
+                <a href="projects/index.html" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Vedi tutti</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="job">
+        <h2>Job Experience</h2>
+        <p>Here is a summary of my professional experience.</p>
+        <div id="jobs-container">
+            <div class="job-card">
+                <h3>Specialist</h3>
+                <p><strong class="company-name">APPLE</strong></p>
+                <p class="job-description">Drive brand loyalty and acquire new customers through the sale of Apple products and services.</p>
+                <p class="job-duration">Current - <span id="job-timer"></span></p>
+            </div>
+            <div class="job-card">
+                <h3>Junior Software Developer Engineer</h3>
+                <p><strong class="company-name">NOKIA</strong></p>
+                <p class="job-description">Developed software for encapsulating transmissions in fiber-optic network nodes, supporting backbone and submarine links at hundreds of Gbps.</p>
+                <p class="job-duration">May 2023 - September 2023 (4 months)</p>
+            </div>
+            <div class="job-card">
+                <h3>IT Consultant</h3>
+                <p><strong class="company-name">GUIDI&PARTNERS</strong></p>
+                <p class="job-description">Modernized IT infrastructure with enhanced security and reliability. Developed management software using PHP and Angular.</p>
+                <p class="job-duration">May 2022 - April 2023 (1 year)</p>
+            </div>
+            <div class="job-card">
+                <h3>.NET Developer</h3>
+                <p><strong class="company-name">AXEL TECHNOLOGY</strong></p>
+                <p class="job-description">Developed applications for transmission recognition and to facilitate TV and radio broadcasting.</p>
+                <p class="job-duration">July 2018 - August 2018 (2 months)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Welcome to my blog! Here I share my thoughts on web development, design, and more.</p>
+        <div id="blog-posts">
+            <article class="blog-post" style="background-color: rgb(255, 242, 205); border-color: rgb(255, 111, 0);">
+                <h3 style="color: rgb(255, 111, 0);">Understanding Web Development</h3>
+                <p>Web development is a vast field that combines creativity and technical skills. In this post, I explore the basics of web development and its importance in today's digital world.</p>
+                <a href="#read-more" style="background-color: rgb(255, 111, 0); color: white;" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Read more</a>
+            </article>
+            <article class="blog-post" style="background-color: rgb(205, 233, 255); border-color: rgb(0, 61, 255);">
+                <h3 style="color: rgb(0, 61, 255);">Design Principles for Effective UI</h3>
+                <p>Good design is crucial for user experience. Here, I discuss key design principles that can help create intuitive and engaging user interfaces.</p>
+                <a href="#read-more" style="background-color: rgb(0, 61, 255); color: white;" class="animated-button"><i class="fa-solid fa-arrow-right"></i> Read more</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out!</p>
+        <a href="mailto:nic@segato.net" id="main-contact-btn">nic@segato.net</a>
+        <p>You can also find me on those platforms:</p>
+        <div id="social-links">
+            <a href="https://github.com/niccolosegato" class="animated-button"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/niccolo-segato/" class="animated-button"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Niccolo' Segato. All rights reserved.</p>
+    </footer>
+    <script async src="https://scripts.withcabin.com/hello.js"></script>
+</body>
+</html>
