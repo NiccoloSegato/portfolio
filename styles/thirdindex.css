@@ -45,18 +45,9 @@ header {
 #header-links a:hover {
     text-decoration: underline;
 }
-#header-contact, #header-location {
+#header-name, #header-location {
     font-family: 'ITC Garamond', sans-serif;
     width: 25%;
-    text-align: right;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-#header-name {
-    font-family: 'ITC Garamond', sans-serif;
-    width: 50%;
     text-align: right;
     height: 100%;
     display: flex;
@@ -245,12 +236,13 @@ main #main-navaside {
 }
 
 #about {
-    border-top: 1px solid black;
     width: 90%;
-    margin: 0 auto;
+    margin: 300px auto 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 20vh;
+    font-size: 20px;
 }
 #about-title {
     width: 50%;
@@ -269,6 +261,48 @@ main #main-navaside {
     text-align: right;
     font-family: 'ITC Garamond', sans-serif;
     font-weight: 100;
+}
+
+#contacts {
+    height: 20vh;
+    width: 90%;
+    margin: 300px auto 200px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+#contacts-title {
+    width: 50%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+#contacts-subtitle {
+    width: 25%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+#contacts-info {
+    width: 25%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+#contacts-info a {
+    font-family: 'ITC Garamond', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin: 20px 0;
+}
+#contacts-info a:hover {
+    text-decoration: underline;
 }
 
 /* PROJECTS SECTION */
