@@ -45,7 +45,7 @@ header {
 #header-links a:hover {
     text-decoration: underline;
 }
-#header-name, #header-location {
+#header-name, #header-location, #header-mobile {
     font-family: 'ITC Garamond', sans-serif;
     width: 25%;
     text-align: right;
@@ -54,7 +54,10 @@ header {
     flex-direction: column;
     justify-content: flex-end;
 }
-#header-name p, #header-location p {
+#header-mobile {
+    display: none;
+}
+#header-name p, #header-location p, #header-mobile p {
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -263,27 +266,33 @@ main #main-navaside {
 /* MOBILE */
 @media screen and (max-width: 768px) {
     header {
-        height: auto;
+        height: 30vh;
         flex-direction: column;
         align-items: flex-end;
         gap: 16px;
         padding: 32px 5%;
     }
-    #header-links, #header-name, #header-location {
-        width: 100%;
-        height: auto;
-    }
-    #header-links a, #header-name p, #header-location p {
-        font-size: 16px;
-    }
 
     #main-header {
-        height: auto;
+        height: calc(70vh - 100px);
         margin: 0 0 60px 0;
-        padding: 24px 5% 0;
+        padding: 0 5% 0;
     }
     #main-header-title {
         flex-direction: column;
+    }
+    #main-header-title h1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    #header-location, #header-name {
+        display: none;
+    }
+    #header-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline
     }
 
     main {

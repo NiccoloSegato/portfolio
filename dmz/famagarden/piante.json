@@ -85,7 +85,7 @@
     "proprietario": "Niccolò",
     "specie": "Hedera helix",
     "icona": "assets/sprites/elsa.png",
-    "ultimaInnaffiata": "2026-08-05T23:40:00+02:00",
+    "ultimaInnaffiata": "2026-08-08T22:00:00+02:00",
     "prossimaInnaffiata": "2026-08-02T22:00:00+02:00",
     "livello": 1
   },
@@ -105,7 +105,7 @@
     "proprietario": "Niccolò",
     "specie": "Chlorophytum comosum",
     "icona": "assets/sprites/erik.png",
-    "ultimaInnaffiata": "2026-08-03T17:00:00+02:00",
+    "ultimaInnaffiata": "2026-08-08T22:00:00+02:00",
     "prossimaInnaffiata": "2026-08-03T22:00:00+02:00",
     "livello": 1
   }
