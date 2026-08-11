@@ -172,11 +172,29 @@ main #main-navaside {
     font-family: 'ITC Garamond', sans-serif;
     font-weight: 100;
 }
-#about-text {
+#about-text, #contacts-info {
     width: 25%;
     text-align: right;
     font-family: 'ITC Garamond', sans-serif;
     font-weight: 100;
+}
+#mobile-about, #mobile-contacts-info {
+    display: none;
+    width: 90%;
+    margin: auto;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.mobile-about-header {
+    margin: 20px 0 0 0;
+}
+.mobile-about-text {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px 0 0;
 }
 
 #contacts {
@@ -352,6 +370,10 @@ main #main-navaside {
         height: auto;
         gap: 16px;
         margin: 120px auto 0 auto;
+        display: none;
+    }
+    #mobile-about, #mobile-contacts-info {
+        display: block;
     }
     #contacts {
         margin-bottom: 100px;
