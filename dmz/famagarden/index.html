@@ -196,11 +196,12 @@
     z-index: 2;
     display: inline-block;
     margin-bottom: 12px;
-    padding: 5px 9px;
-    border: 1px solid rgba(255,255,255,0.32);
+    padding: 7px 11px;
+    border: 1px solid rgba(255,255,255,0.28);
     border-radius: 999px;
-    color: rgba(255,255,255,0.82);
-    background: rgba(0,0,0,0.28);
+    color: rgba(255,255,255,0.94);
+    background: rgba(190, 35, 32, 0.84);
+    box-shadow: 0 8px 24px rgba(120,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.18);
     font-size: clamp(11px, 2vw, 13px);
     font-weight: 900;
     line-height: 1;
@@ -415,9 +416,10 @@
   }
 
   function createScene(plant) {
+    var isExhausted = Number(plant.livello) === 0;
     var scene = document.createElement("section");
     scene.className = "scene";
-    if (Number(plant.livello) === 0) scene.classList.add("is-exhausted");
+    if (isExhausted) scene.classList.add("is-exhausted");
     scene.setAttribute("aria-label", plant.nome);
 
     var image = document.createElement("img");
@@ -438,46 +440,50 @@
     type.textContent = plant.specie || "Pianta";
     overlay.appendChild(type);
 
-    if (Number(plant.livello) === 0) {
+    if (isExhausted) {
       var exhausted = document.createElement("span");
       exhausted.className = "exhausted-label";
       exhausted.textContent = "Esausta";
       overlay.appendChild(exhausted);
     }
 
-    var hpRow = document.createElement("div");
-    hpRow.className = "hp-row";
+    if (!isExhausted) {
+      var hpRow = document.createElement("div");
+      hpRow.className = "hp-row";
 
-    var label = document.createElement("span");
-    label.className = "hp-label";
-    label.textContent = "HP";
-    hpRow.appendChild(label);
+      var label = document.createElement("span");
+      label.className = "hp-label";
+      label.textContent = "HP";
+      hpRow.appendChild(label);
 
-    var track = document.createElement("div");
-    track.className = "hp-track";
-    var fill = document.createElement("div");
-    fill.className = "hp-fill";
-    track.appendChild(fill);
-    hpRow.appendChild(track);
+      var track = document.createElement("div");
+      track.className = "hp-track";
+      var fill = document.createElement("div");
+      fill.className = "hp-fill";
+      track.appendChild(fill);
+      hpRow.appendChild(track);
 
-    var value = document.createElement("span");
-    value.className = "hp-value";
-    hpRow.appendChild(value);
+      var value = document.createElement("span");
+      value.className = "hp-value";
+      hpRow.appendChild(value);
 
-    overlay.appendChild(hpRow);
+      overlay.appendChild(hpRow);
 
-    var radio = createRadioControl(plant);
-    overlay.appendChild(radio);
+      var radio = createRadioControl(plant);
+      overlay.appendChild(radio);
+
+      plant._fill = fill;
+      plant._value = value;
+    }
 
     scene.appendChild(overlay);
     carousel.appendChild(scene);
 
-    plant._fill = fill;
-    plant._value = value;
     updateHealth(plant);
   }
 
   function updateHealth(plant) {
+    if (!plant._fill || !plant._value) return;
     var pct = healthFor(plant);
     plant._fill.style.width = pct + "%";
     plant._fill.setAttribute("data-tone", toneFor(pct));
