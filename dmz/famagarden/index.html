@@ -80,6 +80,20 @@
     object-position: center;
   }
 
+  .scene.is-exhausted img {
+    filter: grayscale(1) contrast(0.92) brightness(0.78);
+  }
+
+  .scene.is-exhausted .scene-overlay::before {
+    background:
+      linear-gradient(0deg,
+        rgba(4, 5, 5, 0.90) 0%,
+        rgba(8, 9, 9, 0.72) 22%,
+        rgba(16, 16, 16, 0.44) 48%,
+        rgba(16, 16, 16, 0.14) 72%,
+        transparent 100%);
+  }
+
   .scene-overlay {
     position: absolute;
     left: 0;
@@ -172,6 +186,27 @@
 
   .hp-fill[data-tone="yellow"] { background: var(--hp-yellow); }
   .hp-fill[data-tone="red"] { background: var(--hp-red); }
+  .hp-fill[data-tone="empty"] {
+    background: rgba(255,255,255,0.40);
+    box-shadow: none;
+  }
+
+  .exhausted-label {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 5px 9px;
+    border: 1px solid rgba(255,255,255,0.32);
+    border-radius: 999px;
+    color: rgba(255,255,255,0.82);
+    background: rgba(0,0,0,0.28);
+    font-size: clamp(11px, 2vw, 13px);
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
 
   .radio-row {
     position: relative;
@@ -365,6 +400,7 @@
   }
 
   function healthFor(plant) {
+    if (Number(plant.livello) === 0) return 0;
     var hours = hoursSinceWatering(plant);
     if (hours === null) return 100;
     var hoursBetween = HOURS_BETWEEN[plant.id] || DEFAULT_HOURS_BETWEEN;
@@ -372,6 +408,7 @@
   }
 
   function toneFor(pct) {
+    if (pct <= 0) return "empty";
     if (pct <= 20) return "red";
     if (pct <= 50) return "yellow";
     return "green";
@@ -380,6 +417,7 @@
   function createScene(plant) {
     var scene = document.createElement("section");
     scene.className = "scene";
+    if (Number(plant.livello) === 0) scene.classList.add("is-exhausted");
     scene.setAttribute("aria-label", plant.nome);
 
     var image = document.createElement("img");
@@ -399,6 +437,13 @@
     type.className = "plant-type";
     type.textContent = plant.specie || "Pianta";
     overlay.appendChild(type);
+
+    if (Number(plant.livello) === 0) {
+      var exhausted = document.createElement("span");
+      exhausted.className = "exhausted-label";
+      exhausted.textContent = "Esausta";
+      overlay.appendChild(exhausted);
+    }
 
     var hpRow = document.createElement("div");
     hpRow.className = "hp-row";
