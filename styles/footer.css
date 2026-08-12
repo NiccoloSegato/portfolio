@@ -1,0 +1,118 @@
+#about {
+    width: 90%;
+    margin: 300px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20vh;
+    font-size: 20px;
+}
+#about-title {
+    width: 50%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 600;
+}
+#about-subtitle {
+    width: 25%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+}
+#about-text, #contacts-info {
+    width: 25%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+}
+#mobile-about, #mobile-contacts-info {
+    display: none;
+    width: 90%;
+    margin: auto;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.mobile-about-header {
+    margin: 20px 0 0 0;
+}
+.mobile-about-text {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px 0 0;
+}
+
+#contacts {
+    height: 20vh;
+    width: 90%;
+    margin: 300px auto 200px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+#contacts-title {
+    width: 50%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+#contacts-subtitle {
+    width: 25%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+#contacts-info {
+    width: 25%;
+    text-align: right;
+    font-family: 'ITC Garamond', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+#contacts-info a {
+    font-family: 'ITC Garamond', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin: 20px 0;
+}
+#contacts-info a:hover {
+    text-decoration: underline;
+}
+
+#aiap-logo {
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    #about, #contacts {
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+        margin: 120px auto 0 auto;
+        display: none;
+    }
+    #mobile-about, #mobile-contacts-info {
+        display: block;
+    }
+    #contacts {
+        margin-bottom: 100px;
+    }
+    #about-title, #about-subtitle, #about-text,
+    #contacts-title, #contacts-subtitle, #contacts-info {
+        width: 100%;
+    }
+    #contacts-info, #contacts-info a {
+        overflow-wrap: break-word;
+    }
+}
