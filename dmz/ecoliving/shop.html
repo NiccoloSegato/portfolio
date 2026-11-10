@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christmas Collection — EcoLiving</title>
+  <meta name="description" content="La Collezione di Natale EcoLiving: decorazioni e regali sostenibili, fatti a mano in Italia.">
+  <meta name="theme-color" content="#1f4a3a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='22' cy='21' r='15' fill='%23f3b740'/%3E%3Cpath d='M6 34V18l11-9 11 9v16z' fill='%232e6b4f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+  <div data-header></div>
+
+  <main id="main">
+    <section class="shop-hero scallop-bottom" aria-labelledby="shop-title">
+      <div class="shop-hero__stars" data-art="shopStars" aria-hidden="true"></div>
+      <div class="snow" data-snow="35" aria-hidden="true"></div>
+      <div class="wrap">
+        <span class="eyebrow">Edizione limitata · Natale 2026</span>
+        <h1 id="shop-title">Christmas Collection</h1>
+        <p class="lead">La nostra collezione pensata per le feste, con attenzione alla sostenibilità e alla durata. Per un regalo indimenticabile, che resta in casa anche dopo l’Epifania.</p>
+        <p style="font-family:var(--ff-mono);font-size:.85rem;margin-top:6px">Ordina entro il 18 dicembre per riceverlo prima di Natale:</p>
+        <div class="countdown" data-countdown></div>
+      </div>
+      <div class="stamp" aria-hidden="true"><span>−15%<small>CODICE CASA15</small></span></div>
+    </section>
+
+    <section class="section" aria-labelledby="grid-title">
+      <div class="wrap">
+        <h2 id="grid-title" class="sr-only">Prodotti</h2>
+        <div class="shop-bar">
+          <div class="filters" role="group" aria-label="Filtra i prodotti">
+            <button class="chip" type="button" data-cat="tutti" aria-pressed="true">Tutto</button>
+            <button class="chip" type="button" data-cat="decorazioni" aria-pressed="false">Decorazioni</button>
+            <button class="chip" type="button" data-cat="tavola" aria-pressed="false">In tavola</button>
+            <button class="chip" type="button" data-cat="regali" aria-pressed="false">Da regalare</button>
+            <button class="chip" type="button" data-cat="sotto20" aria-pressed="false">Sotto i 20€</button>
+          </div>
+          <span class="shop-count" aria-live="polite"></span>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </div>
+    </section>
+
+    <section class="section--tight" aria-labelledby="cfg-promo-title" style="padding-top:0">
+      <div class="wrap">
+        <div class="cfg-promo">
+          <div>
+            <span class="eyebrow">Non sai cosa scegliere?</span>
+            <h2 id="cfg-promo-title">Componi il tuo regalo</h2>
+            <p class="muted">Dicci per chi è e quanto vuoi spendere: ti suggeriamo gli oggetti giusti e scegli tu carta, nastro e bigliettino.</p>
+          </div>
+          <a class="btn btn--green" href="configuratore.html">Inizia ora <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--tight" aria-label="Vantaggi" style="padding-top:0">
+      <div class="wrap perks">
+        <div class="perk"><span class="feature__icon" style="--c:var(--red);color:var(--cream)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1Zm0 0c2-4 6-4 6-1s-6 1-6 1Z"/></svg></span><div><h3>Confezione regalo gratis</h3><p>Carta riciclata, spago e bigliettino scritto a mano da noi.</p></div></div>
+        <div class="perk"><span class="feature__icon" style="--c:var(--yellow)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><div><h3>Spedizione gratuita</h3><p>Sopra i 49€, in tutta Italia. Imballaggi senza plastica.</p></div></div>
+        <div class="perk"><span class="feature__icon" style="--c:var(--green);color:var(--cream)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v4h4"/></svg></span><div><h3>Reso fino al 31 gennaio</h3><p>Chi riceve il regalo può cambiarlo, senza che tu lo sappia.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

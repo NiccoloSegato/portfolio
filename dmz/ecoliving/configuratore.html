@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Componi il tuo regalo — EcoLiving</title>
+  <meta name="description" content="Componi un regalo su misura con gli oggetti EcoLiving: scegli per chi, il budget, la carta e il nastro. Confezione regalo gratuita.">
+  <meta name="theme-color" content="#1f4a3a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='22' cy='21' r='15' fill='%23f3b740'/%3E%3Cpath d='M6 34V18l11-9 11 9v16z' fill='%232e6b4f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="config">
+  <div data-header></div>
+
+  <main id="main">
+    <section class="cfg-hero scallop-bottom" aria-labelledby="cfg-title">
+      <div class="wrap">
+        <span class="eyebrow">Configuratore regali · Natale 2026</span>
+        <h1 id="cfg-title">Componi il tuo regalo</h1>
+        <p class="lead">Scegli per chi è, quanto vuoi spendere e fino a tre oggetti. Noi li impacchettiamo a mano in carta riciclata, con il nastro e il bigliettino che preferisci.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:clamp(40px,5vw,64px)">
+      <form class="wrap cfg" id="cfg" novalidate>
+        <div class="cfg__steps">
+
+          <fieldset class="step" id="step-who">
+            <legend class="step__head"><span class="step__num">1</span><span>Per chi è il regalo?</span></legend>
+            <div class="opts" data-group="who">
+              <label class="opt"><input type="radio" name="who" value="sorpresa" checked><span>✶ Sorprendimi</span></label>
+              <label class="opt"><input type="radio" name="who" value="piccoli"><span>Per i più piccoli</span></label>
+              <label class="opt"><input type="radio" name="who" value="cucina"><span>Per chi ama cucinare</span></label>
+              <label class="opt"><input type="radio" name="who" value="casa"><span>Per chi ama la casa</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="step" id="step-budget">
+            <legend class="step__head"><span class="step__num">2</span><span>Quanto vuoi spendere?</span></legend>
+            <div class="budget">
+              <label for="budget" class="sr-only">Budget</label>
+              <input type="range" id="budget" name="budget" min="10" max="200" step="5" value="60">
+              <output for="budget" class="budget__out" id="budget-out">60€</output>
+            </div>
+            <div class="meter" aria-hidden="true"><span class="meter__fill" id="meter"></span></div>
+            <p class="step__hint" id="budget-hint" aria-live="polite"></p>
+          </fieldset>
+
+          <fieldset class="step" id="step-items">
+            <legend class="step__head"><span class="step__num">3</span><span>Scegli fino a 3 oggetti</span></legend>
+            <p class="step__hint"><span id="picked-count">0 di 3 scelti</span> · in cima trovi i più adatti</p>
+            <div class="picks" id="picks"></div>
+          </fieldset>
+
+          <fieldset class="step" id="step-wrap">
+            <legend class="step__head"><span class="step__num">4</span><span>Carta, nastro e bigliettino</span></legend>
+            <p class="step__label">Carta</p>
+            <div class="swatches" data-group="paper"></div>
+            <p class="step__label">Nastro</p>
+            <div class="swatches swatches--ribbon" data-group="ribbon"></div>
+            <div class="note-fields">
+              <label class="field"><span>Per</span><input type="text" name="to" maxlength="18" placeholder="Nonna Pina" autocomplete="off"></label>
+              <label class="field"><span>Da parte di</span><input type="text" name="from" maxlength="18" placeholder="Luca" autocomplete="off"></label>
+              <label class="field field--wide"><span>Messaggio sul bigliettino <small id="msg-count">0/140</small></span><textarea name="msg" maxlength="140" rows="3" placeholder="Che duri almeno quanto la nostra amicizia."></textarea></label>
+            </div>
+            <label class="check"><input type="checkbox" name="hidePrice" checked> <span>Non inserire lo scontrino nel pacco</span></label>
+          </fieldset>
+        </div>
+
+        <aside class="cfg__preview" id="anteprima" aria-labelledby="preview-title">
+          <h2 id="preview-title" class="sr-only">Anteprima del regalo</h2>
+          <div class="gift-stage" id="gift"></div>
+          <div class="gift-card" id="gift-card" hidden></div>
+          <div class="summary">
+            <ul class="summary__items" id="sum-items"></ul>
+            <div class="summary__rows" id="sum-rows"></div>
+            <div class="ship" id="ship"></div>
+            <a class="btn btn--red btn--block" id="cfg-cta" href="#" aria-disabled="true">Ordina il regalo <span class="arrow">→</span></a>
+            <button type="button" class="cfg-reset" id="cfg-reset">Ricomincia da capo</button>
+          </div>
+        </aside>
+      </form>
+    </section>
+
+    <div class="cfg-bar" id="cfg-bar" aria-hidden="true">
+      <span id="bar-text">Nessun oggetto</span>
+      <a class="btn btn--red" href="#anteprima" tabindex="-1">Vedi il regalo</a>
+    </div>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/configuratore.js"></script>
+</body>
+</html>

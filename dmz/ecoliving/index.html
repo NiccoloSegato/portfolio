@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoLiving — Oggetti per la casa, fatti per durare</title>
+  <meta name="description" content="Oggetti per la casa sostenibili, prodotti in piccole botteghe italiane e fatti per durare. Scopri la Collezione di Natale.">
+  <meta name="theme-color" content="#1f4a3a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='22' cy='21' r='15' fill='%23f3b740'/%3E%3Cpath d='M6 34V18l11-9 11 9v16z' fill='%232e6b4f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div data-header></div>
+
+  <main id="main">
+    <!-- ============ HERO (Natale) ============ -->
+    <section class="hero scallop-bottom" aria-labelledby="hero-title">
+      <div class="snow" data-snow="55" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow">Collezione di Natale 2026</span>
+          <h1 id="hero-title">Oggetti per la casa, <em>fatti per durare.</em></h1>
+          <p class="lead">Quest’anno regala qualcosa che resta: palline in vetro riciclato, renne di faggio da tramandare, pentole in rame che ripariamo noi. Tutto fatto a mano in piccole botteghe italiane.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--light" href="shop.html">Collezione di Natale <span class="arrow">→</span></a>
+            <a class="btn btn--outline-light" href="#produzione">Come li produciamo</a>
+          </div>
+          <div class="hero__note"><span>Confezione regalo gratis</span><span>Spedizione 0€ sopra 49€</span><span>Reso fino al 31/01</span></div>
+        </div>
+        <div class="hero__art" data-art="hero"></div>
+      </div>
+      <div class="stamp" aria-hidden="true" style="right:calc(var(--gutter) + 1%); top:auto; bottom:7%">
+        <span>arriva<br>prima di<strong>Natale</strong><small>ORDINA ENTRO IL 18/12</small></span>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICAZIONI ============ -->
+    <section class="certs section--tight" aria-labelledby="cert-title" style="padding-block:72px">
+      <div class="wrap">
+        <div class="section-head section-head--center" style="margin-bottom:44px">
+          <h2 id="cert-title" style="font-size:clamp(1.6rem,3vw,2.2rem)">Certificati da enti indipendenti</h2>
+        </div>
+        <div class="certs__row">
+          <div class="cert reveal"><div class="cert__badge" style="--c:var(--green)"><span>FSC</span></div><p><b>Legno responsabile</b>Foreste gestite in modo controllato.</p></div>
+          <div class="cert reveal"><div class="cert__badge" style="--c:var(--orange)"><span>GOTS</span></div><p><b>Tessili organici</b>Dalla fibra alla cucitura.</p></div>
+          <div class="cert reveal"><div class="cert__badge" style="--c:var(--blue)"><span>EU<br>Eco</span></div><p><b>Ecolabel UE</b>Impatto ridotto su tutto il ciclo di vita.</p></div>
+          <div class="cert reveal"><div class="cert__badge" style="--c:var(--ink)"><span>B</span></div><p><b>B Corp</b>Persone e pianeta prima del profitto.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROMO REGALI (Natale) ============ -->
+    <section class="gifts section scallop-top scallop-bottom" aria-labelledby="gifts-title">
+      <div class="wrap">
+        <div class="gifts__head">
+          <div style="display:grid;gap:14px">
+            <span class="eyebrow">Idee regalo</span>
+            <h2 id="gifts-title">Sotto l’albero,<br>cose che durano.</h2>
+          </div>
+          <div class="gifts__offer">
+            <strong>−15% su tutta la collezione</strong>
+            <span>Usa il codice <code>CASA15</code> al checkout. Valido fino al 18 dicembre.</span>
+            <div class="countdown" data-countdown></div>
+          </div>
+        </div>
+        <div class="scroller" data-gifts aria-label="Prodotti della collezione di Natale"></div>
+        <p style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap"><a class="btn btn--light" href="shop.html">Vedi tutta la collezione <span class="arrow">→</span></a><a class="btn btn--outline-light" href="configuratore.html">Componi il tuo regalo</a></p>
+      </div>
+    </section>
+
+    <!-- ============ MATERIALI ============ -->
+    <section class="section" id="materiali" aria-labelledby="mat-title">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow">Materiali</span>
+          <h2 id="mat-title" style="margin:14px 0 28px">Con cosa sono fatti?</h2>
+          <div class="tabs" role="tablist" aria-label="Materiali e fornitori">
+            <button role="tab" id="tab-mat" aria-controls="panel-mat" aria-selected="true">Materiali</button>
+            <button role="tab" id="tab-for" aria-controls="panel-for" aria-selected="false" tabindex="-1">Fornitori</button>
+          </div>
+          <div id="panel-mat" role="tabpanel" aria-labelledby="tab-mat">
+            <div class="feature-grid">
+              <div class="feature reveal">
+                <span class="feature__icon" style="--c:var(--orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span>
+                <h3>Legno di faggio FSC</h3>
+                <p>Da foreste alpine gestite: per ogni albero tagliato, ne ricrescono altri.</p>
+              </div>
+              <div class="feature reveal">
+                <span class="feature__icon" style="--c:var(--pink)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span>
+                <h3>Lino e cotone organico</h3>
+                <p>Coltivati senza pesticidi e tessuti a meno di 300 km dalla nostra bottega.</p>
+              </div>
+              <div class="feature reveal">
+                <span class="feature__icon" style="--c:var(--yellow)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h16v8a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V9Z"/><path d="M2 9h20"/></svg></span>
+                <h3>Rame e acciaio riciclati</h3>
+                <p>Metalli recuperati e rifusi: durano per sempre e si possono rifondere ancora.</p>
+              </div>
+              <div class="feature reveal">
+                <span class="feature__icon" style="--c:var(--green); color:var(--cream)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c3 4 4 6 4 8a4 4 0 0 1-8 0c0-2 1-4 4-8Z"/><path d="M8 21h8"/></svg></span>
+                <h3>Cera di soia e vetro</h3>
+                <p>Candele senza paraffina e vetro 100% riciclato, soffiato a mano.</p>
+              </div>
+            </div>
+          </div>
+          <div id="panel-for" role="tabpanel" aria-labelledby="tab-for" hidden>
+            <div class="feature-grid">
+              <div class="feature"><h3>Falegnameria Runggaldier</h3><small>VAL GARDENA (BZ) · DAL 1962</small><p>Tornisce le nostre renne e i taglieri, con il legno delle valli intorno.</p></div>
+              <div class="feature"><h3>Ramai di Agordo</h3><small>AGORDO (BL) · DAL 1988</small><p>Tre generazioni a martellare il rame. Ristagnano anche le pentole vecchie.</p></div>
+              <div class="feature"><h3>Vetreria Sala</h3><small>EMPOLI (FI) · DAL 1971</small><p>Soffia il nostro vetro riciclato, raccolto nei comuni della provincia.</p></div>
+              <div class="feature"><h3>Tessitura Lunardi</h3><small>BIELLA · DAL 1954</small><p>Lino e cotone GOTS su telai restaurati, con energia da fotovoltaico.</p></div>
+            </div>
+          </div>
+          <p style="margin-top:36px"><a class="link-arrow" href="#produzione">Scopri come lavoriamo →</a></p>
+        </div>
+        <div class="art-frame reveal" data-art="materials"></div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUZIONE ============ -->
+    <section class="production section scallop-top scallop-bottom" id="produzione" aria-labelledby="prod-title">
+      <div class="wrap production__grid">
+        <div class="production__intro">
+          <span class="eyebrow">Produzione</span>
+          <h2 id="prod-title">Come nasce<br>un nostro prodotto</h2>
+          <p class="lead">Niente fabbriche lontane: ogni oggetto passa per le mani di qualcuno che conosciamo per nome. Ci vuole più tempo, ma dura molto di più.</p>
+          <div class="row">
+            <a class="btn btn--green" href="shop.html">Vai allo shop</a>
+            <a class="btn btn--ghost" href="#persone">Chi c’è dietro <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <ol class="timeline">
+          <span class="timeline__progress" aria-hidden="true"></span>
+          <li>
+            <span class="timeline__num">01</span>
+            <div><h3>Scegliamo la materia</h3><p>Partiamo da quello che c’è già: legno da foreste certificate, metalli e vetro da recupero, fibre organiche. Se un materiale non si può riparare o riciclare, non entra.</p><span class="meta">≤ 300 km di filiera</span></div>
+          </li>
+          <li>
+            <span class="timeline__num">02</span>
+            <div><h3>Lavorazione in bottega</h3><p>Artigiani e piccoli laboratori italiani lavorano in piccoli lotti, su ordinazione. Niente magazzini pieni di invenduto da buttare.</p><span class="meta">38 botteghe partner</span></div>
+          </li>
+          <li>
+            <span class="timeline__num">03</span>
+            <div><h3>Controllo e finitura</h3><p>Ogni pezzo viene controllato a mano, rifinito con oli e cere naturali e firmato da chi l’ha fatto, sul cartellino.</p><span class="meta">100% pezzi controllati</span></div>
+          </li>
+          <li>
+            <span class="timeline__num">04</span>
+            <div><h3>Spedizione senza plastica</h3><p>Cartone riciclato, carta kraft e nastro gommato. Spediamo con corrieri a emissioni compensate, e il pacco a Natale diventa carta da regalo.</p><span class="meta">0 g di plastica</span></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ IMPATTO ============ -->
+    <section class="impact section scallop-top" aria-labelledby="imp-title">
+      <div class="wrap impact__grid">
+        <div>
+          <span class="eyebrow">Dal 2010</span>
+          <h2 id="imp-title" style="margin-top:14px">Sedici anni di impatto</h2>
+          <p class="lead" style="margin-top:18px">Un anello per ogni anno, come negli alberi. Misuriamo tutto quello che facciamo e lo pubblichiamo, anche quando i numeri non ci piacciono.</p>
+          <div class="stats">
+            <div class="stat"><b data-count="212" data-suffix=" t">0</b><span>di CO₂ evitate rispetto alla media del settore</span></div>
+            <div class="stat"><b data-count="9400">0</b><span>riparazioni gratuite fatte in bottega</span></div>
+            <div class="stat"><b data-count="38">0</b><span>botteghe artigiane partner in Italia</span></div>
+            <div class="stat"><b data-count="0" data-suffix=" g">0</b><span>di plastica nei nostri imballaggi</span></div>
+          </div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <a class="btn btn--light" href="#" style="--sh:var(--orange)">Report di sostenibilità</a>
+            <a class="btn btn--outline-light" href="#">I dati annuali</a>
+          </div>
+        </div>
+        <div class="impact__art reveal" data-art="impact"></div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIANZE ============ -->
+    <section class="section" aria-labelledby="rev-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Recensioni</span>
+          <h2 id="rev-title">Cosa dicono i nostri clienti</h2>
+          <p class="lead muted">4,9 su 5 da oltre 3.200 recensioni verificate.</p>
+        </div>
+        <div class="quotes">
+          <figure class="quote reveal" style="margin:0">
+            <div class="stars" aria-label="5 stelle su 5">★★★★★</div>
+            <blockquote>“La renna l’ho regalata a mia nipote tre anni fa. Ora ci gioca il fratellino, ed è ancora perfetta.”</blockquote>
+            <figcaption class="who"><span class="avatar" style="--c:var(--pink)">C</span><span><b>Chiara R.</b>Treviso</span></figcaption>
+          </figure>
+          <figure class="quote reveal" style="margin:0">
+            <div class="stars" aria-label="5 stelle su 5">★★★★★</div>
+            <blockquote>“Ho mandato indietro una pentola ammaccata dopo otto anni. Me l’hanno ristagnata gratis. Chi lo fa più?”</blockquote>
+            <figcaption class="who"><span class="avatar" style="--c:var(--yellow)">D</span><span><b>Davide M.</b>Bologna</span></figcaption>
+          </figure>
+          <figure class="quote reveal" style="margin:0">
+            <div class="stars" aria-label="5 stelle su 5">★★★★★</div>
+            <blockquote>“Il pacco arriva in carta kraft e spago: l’ho messo sotto l’albero così com’era. Zero plastica, zero sensi di colpa.”</blockquote>
+            <figcaption class="who"><span class="avatar" style="--c:var(--green); color:var(--cream)">S</span><span><b>Sara L.</b>Milano</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PERSONE ============ -->
+    <section class="section" id="persone" aria-labelledby="team-title" style="padding-top:20px">
+      <div class="wrap">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Le persone</span>
+          <h2 id="team-title">Chi c’è dietro EcoLiving</h2>
+          <p class="lead muted">Siamo in quattro, più un cane da bottega e 38 laboratori sparsi per l’Italia.</p>
+        </div>
+        <div class="team">
+          <article class="member reveal">
+            <div class="member__pic" data-art="person:giulia"></div>
+            <h3>Giulia Ferri</h3><span class="role">Fondatrice</span>
+            <p>Ha aperto EcoLiving nel 2010 in un garage di Padova. Sceglie ogni oggetto, uno per uno.</p>
+            <div class="socials" data-socials="Giulia"></div>
+          </article>
+          <article class="member reveal">
+            <div class="member__pic" data-art="person:marco"></div>
+            <h3>Marco Bellin</h3><span class="role">Laboratorio riparazioni</span>
+            <p>Se si rompe, passa da lui. Ha riparato più di novemila oggetti e li ricorda quasi tutti.</p>
+            <div class="socials" data-socials="Marco"></div>
+          </article>
+          <article class="member reveal">
+            <div class="member__pic" data-art="person:amina"></div>
+            <h3>Amina Diallo</h3><span class="role">Filiera e certificazioni</span>
+            <p>Gira le botteghe partner e controlla che quello che diciamo sia vero, numeri alla mano.</p>
+            <div class="socials" data-socials="Amina"></div>
+          </article>
+          <article class="member reveal">
+            <div class="member__pic" data-art="person:elena"></div>
+            <h3>Elena Costa</h3><span class="role">Design e packaging</span>
+            <p>Disegna le collezioni e i pacchi in carta riciclata. Le stampe riso sono sue.</p>
+            <div class="socials" data-socials="Elena"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section production scallop-top" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head section-head--center">
+          <h2 id="faq-title">Domande frequenti</h2>
+          <p class="lead muted">Tutto quello che ci chiedete più spesso, soprattutto a dicembre.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Da dove arrivano i materiali che usate? <span class="plus" aria-hidden="true">+</span></summary>
+            <div>Quasi tutti da meno di 300 km dalle botteghe che li lavorano: legno dalle Alpi, rame e vetro da filiere di recupero italiane, lino e cotone organico tessuti in Piemonte. Sulla scheda di ogni prodotto trovi l’origine precisa.</div>
+          </details>
+          <details>
+            <summary>Chi verifica le vostre certificazioni? <span class="plus" aria-hidden="true">+</span></summary>
+            <div>Enti terzi indipendenti, con audit annuali sulle botteghe e sui fornitori. Pubblichiamo i certificati e il report di sostenibilità completo ogni primavera.</div>
+          </details>
+          <details open>
+            <summary class="xmas-q">Entro quando ordinare per riceverlo prima di Natale? <span class="plus" aria-hidden="true">+</span></summary>
+            <div>Con la spedizione standard, entro il <b>18 dicembre</b> in tutta Italia. Dal 19 al 21 dicembre puoi scegliere la spedizione express (consegna entro il 23). La confezione regalo è sempre gratuita.</div>
+          </details>
+          <details>
+            <summary>Posso restituire un regalo? <span class="plus" aria-hidden="true">+</span></summary>
+            <div>Sì: per gli ordini fatti tra il 1° novembre e il 24 dicembre il reso è gratuito fino al 31 gennaio. Chi riceve il regalo può cambiarlo senza che tu lo sappia, con il codice sul bigliettino.</div>
+          </details>
+          <details>
+            <summary>Come funziona la garanzia legale? <span class="plus" aria-hidden="true">+</span></summary>
+            <div>Tutti i prodotti hanno la garanzia legale di 2 anni. In più, molti oggetti hanno la nostra garanzia di riparazione: se si rompe, lo aggiustiamo noi. Le pentole in rame arrivano a 25 anni.</div>
+          </details>
+        </div>
+        <div class="faq-more">
+          <h3 style="font-size:1.6rem">Non hai trovato la risposta?</h3>
+          <p class="muted">Scrivici: risponde una persona vera, di solito entro un giorno lavorativo.</p>
+          <a class="btn" href="mailto:ciao@ecoliving.example">Contattaci</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
