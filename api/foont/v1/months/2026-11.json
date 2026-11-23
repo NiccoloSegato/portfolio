@@ -1,0 +1,93 @@
+{
+  "month": "2026-11",
+  "days": [
+    {
+      "date": "2026-11-23",
+      "fontName": "Inter",
+      "creatorName": "Rasmus Andersson",
+      "fontDescription": "Inter is a workhorse of a typeface carefully crafted & designed for a wide range of applications, from detailed user interfaces to marketing & signage. The Inter typeface family features over 2000 glyphs covering 147 languages.\nWeights range from a delicate thin 100 all the way up to a heavy 900. Each glyph has three dedicated designs for weights 100, 400 and 900 to ensure excellent quality at any weight. Optical size ranges from \"text\" to \"display\" and there is a true italic variant.\nInter is one of the world's most used typefaces with applications ranging from computer interfaces, advertising & airports, to NASA instrumentation & medical equipment.",
+      "creatorDescription": "Rasmus Andersson is a designer and software engineer. He started Inter in 2016, under the name Inter UI, as a typeface for his own interface work, and has kept developing it in the open ever since. Inter is free and open source.",
+      "link": "https://rsms.me/inter/",
+      "color": "#11A5A3",
+      "fontUrl": "https://cdn.jsdelivr.net/gh/google/fonts@06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+      "illustrationUrl": ""
+    },
+    {
+      "date": "2026-11-24",
+      "fontName": "Roboto",
+      "creatorName": "Google",
+      "fontDescription": "Roboto was designed by Christian Robertson for Android 4.0 in 2011 and refined for Material Design in 2014. It pairs a mechanical skeleton and largely geometric forms with friendly, open curves, so it reads naturally on screens and on paper. It is one of the most widely used typefaces in the world, and it is released as open source.",
+      "creatorDescription": "Google commissioned Roboto as the typeface of Android and publishes it as open source through Google Fonts. The family was designed by Christian Robertson and has since been extended with contributions from ParaType and Font Bureau.",
+      "link": "https://fonts.google.com/specimen/Roboto",
+      "color": "#F48B8B",
+      "fontUrl": "https://cdn.jsdelivr.net/gh/google/fonts@06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+      "illustrationUrl": ""
+    },
+    {
+      "date": "2026-11-25",
+      "fontName": "Playfair Display",
+      "creatorName": "Claus Eggers Sørensen",
+      "fontDescription": "Playfair Display is a transitional serif inspired by the typefaces of the late 18th century, with high contrast between thick and thin strokes and sharp, elegant details. It was drawn for titles and headlines rather than long passages of text. The family covers weights from regular to black, with matching italics.",
+      "creatorDescription": "Claus Eggers Sørensen is a type designer. Playfair Display is his best-known work, released as an open-source family through Google Fonts.",
+      "link": "https://fonts.google.com/specimen/Playfair+Display",
+      "color": "#C8472D",
+      "fontUrl": "https://cdn.jsdelivr.net/gh/google/fonts@06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf",
+      "illustrationUrl": ""
+    },
+    {
+      "date": "2026-11-26",
+      "fontName": "Bebas Neue",
+      "creatorName": "Ryoichi Tsunekawa",
+      "fontDescription": "Bebas Neue is a tall, all-caps display sans serif. Its narrow, evenly weighted strokes and tight proportions made it a favourite for posters, film titles and headlines. Because it has no lowercase, every letter you type appears as a capital.",
+      "creatorDescription": "Ryoichi Tsunekawa is a Japanese type designer and the founder of Dharma Type, a foundry known for bold display typefaces. Bebas Neue is the best known of them.",
+      "link": "https://dharmatype.com/about",
+      "color": "#2F4BDB",
+      "fontUrl": "https://cdn.jsdelivr.net/gh/google/fonts@06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/bebasneue/BebasNeue-Regular.ttf",
+      "illustrationUrl": ""
+    },
+    {
+      "date": "2026-11-27",
+      "fontName": "Space Mono",
+      "creatorName": "Colophon Foundry",
+      "fontDescription": "Space Mono is a monospaced typeface designed for Google Fonts in 2016. Inspired by geometric and retro-futurist lettering, it pairs a mechanical, even rhythm with quirky, expressive details. Every character takes up the same width, which gives text a distinctive, typewriter-like grid.",
+      "creatorDescription": "Colophon Foundry was a digital type foundry founded in 2009 by Benjamin Critton, Edd Harrington and Anthony Sheret, with studios in London and Los Angeles. It drew Space Mono for Google Fonts in 2016. Since 2025 the Colophon library has been part of Monotype.",
+      "link": "https://fonts.google.com/specimen/Space+Mono",
+      "color": "#6F4CD9",
+      "fontUrl": "https://cdn.jsdelivr.net/gh/google/fonts@06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/spacemono/SpaceMono-Regular.ttf",
+      "illustrationUrl": ""
+    },
+    {
+      "date": "2026-11-28",
+      "fontName": "Abril Fatface",
+      "creatorName": "TypeTogether",
+      "fontDescription": "Abril Fatface is a \"fat face\" Didone: ultra-heavy strokes set against razor-thin hairlines, in the tradition of 19th-century advertising and poster types. It is the boldest member of the Abril family and is meant for large sizes, where its contrast can really show.",
+      "creatorDescription": "TypeTogether is a type foundry founded in 2006 by Veronika Burian and José Scaglione. It is known for typeface families designed for both text and display, and released Abril in 2011.",
+      "link": "https://www.typetogether.com/fonts/abril",
+      "color": "#F4B6C8",
+      "fontUrl": "https://cdn.jsdelivr.net/gh/google/fonts@06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/abrilfatface/AbrilFatface-Regular.ttf",
+      "illustrationUrl": ""
+    },
+    {
+      "date": "2026-11-29",
+      "fontName": "Pacifico",
+      "creatorName": "Vernon Adams",
+      "fontDescription": "Pacifico is a casual brush script that evokes the surf culture of 1950s America. Its rounded, flowing strokes and generous connections between letters give words a relaxed, sunny feel. It works best for short phrases, logos and headings.",
+      "creatorDescription": "Vernon Adams was a type designer whose open-source work for Google Fonts includes Pacifico and Oswald. He died in 2014, and other designers have since carried several of his projects forward.",
+      "link": "https://fonts.google.com/specimen/Pacifico",
+      "color": "#F5C84C",
+      "fontUrl": "https://cdn.jsdelivr.net/gh/google/fonts@06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/pacifico/Pacifico-Regular.ttf",
+      "illustrationUrl": ""
+    },
+    {
+      "date": "2026-11-30",
+      "fontName": "Caveat",
+      "creatorName": "Impallari Type",
+      "fontDescription": "Caveat is a casual handwriting typeface that imitates quick writing with a marker. Its lively, slightly irregular strokes vary subtly from one letter to the next, so text looks written rather than printed. It is available as a variable font with weights from regular to bold.",
+      "creatorDescription": "Pablo Impallari is an Argentine type designer and the founder of Impallari Type. His open-source families include Lobster and Caveat.",
+      "link": "https://fonts.google.com/specimen/Caveat",
+      "color": "#3E8E5A",
+      "fontUrl": "https://cdn.jsdelivr.net/gh/google/fonts@06bfe0d62a98375cb09c942fa18e68bd32cff057/ofl/caveat/Caveat%5Bwght%5D.ttf",
+      "illustrationUrl": ""
+    }
+  ]
+}
